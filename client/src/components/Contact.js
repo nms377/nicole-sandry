@@ -6,10 +6,10 @@ class Contact extends Component {
 		return(
 			<div id="Contact">
 
-				<a href="https://nms377.github.io/nicolesandry/" target="_blank" rel="noopener noreferrer">Resume</a>
+				<a href="https://nms377.github.io/nicolesandry/" target="_blank" rel="noopener noreferrer">Hire Me</a>
 
 				<ul>
-					<li><a href="mailto:nsandry@gmail.com">nsandry@gmail.com</a></li>
+					<li><a href="mailto:nicolesandryphotography@gmail.com">nicolesandryphotography@gmail.com</a></li>
 					<li><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
 					<li><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer">GitHub</a></li>
 					<li><a href="https://www.instagram.com/nicolesandry/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
