@@ -7,9 +7,9 @@ class About extends Component {
 		return(
 			<div id="About">
 				<img src="/people/_RI_5176.jpg" alt="Self-portrait" height="333"></img>
-				<p>I am a designer, photographer, and web developer based in Hawaii.</p>
+				<p>I am a photographer and web developer based on Oahu, Hawaii.</p>
 				
-				<p>I specialize in portraiture, food photography, food styling, and web design. <Link to='/contact'>Contact</Link> me for more information.</p>
+				<p>I specialize in portraiture, food photography, and web design. <Link to='/contact'>Contact</Link> me for more information.</p>
 			</div>
 		)
 	}
