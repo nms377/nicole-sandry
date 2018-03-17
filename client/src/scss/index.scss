@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Navigation Links for Main Nav & Photography Nav */
+.Nav-Link, .Sub-Nav{
+    display: inline;
+    list-style: none;
+}
+
+#Nav {
+  border: 2px solid lime;
+
+  display: flex;
+  flex-direction: column;
+
+  #Nicole-Sandry {
+    background-color: pink;
+
+  	flex: 0 0 auto;
+  	align-self: center;
+  }
+}
+
