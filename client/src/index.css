@@ -1,20 +1,241 @@
-* {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, #root {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif; }
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-a {
-  text-decoration: none; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-/* Navigation Links for Main Nav & Photography Nav */
-.Nav-Link, .Sub-Nav {
-  display: inline;
+body {
+  line-height: 1; }
+
+ol, ul {
   list-style: none; }
 
-#Nav {
-  border: 2px solid lime;
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */
+#workContainer {
+  /*border: 2px dotted black;*/
   display: flex;
-  flex-direction: column; }
-  #Nav #Nicole-Sandry {
-    background-color: pink;
+  flex-flow: column nowrap;
+  padding: 1.5rem 0;
+  font-size: .85rem; }
+
+.work {
+  border: 1px solid #ccc;
+  flex: 0 0 auto;
+  width: 80%;
+  align-self: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: .75rem;
+  text-align: left;
+  display: flex;
+  flex-flow: column wrap; }
+  .work .workImg {
     flex: 0 0 auto;
-    align-self: center; }
+    order: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% top; }
+  .work .company {
+    flex: 0 0 auto;
+    order: 1;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: .5rem 0 .5rem 1rem; }
+  .work .position {
+    flex: 0 0 auto;
+    order: 2;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem; }
+  .work .description {
+    flex: 0 0 auto;
+    order: 3;
+    margin-bottom: .625rem;
+    line-height: 1rem;
+    padding: 0 1rem; }
+  .work .workContributions {
+    flex: 0 0 auto;
+    order: 4; }
+    .work .workContributions .contributions {
+      font-size: 1rem;
+      margin: 0 0 .125rem 1rem; }
+    .work .workContributions ul, .work .workContributions li {
+      width: 90%;
+      text-align: left;
+      list-style-position: outside;
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-bottom: .25rem;
+      line-height: 1.25rem; }
+
+#Resume {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1.5rem 0;
+  text-align: left;
+  font-size: .83rem; }
+
+#resume-container {
+  flex: 0 0 auto;
+  align-self: center;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap; }
+
+#contact-header {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+#contact {
+  flex: 0 0 auto;
+  align-self: center;
+  margin: .25rem 0 0 0;
+  width: 14.75rem;
+  font-size: 1rem; }
+  #contact li {
+    list-style-type: none;
+    text-align: left;
+    margin: 0 0 0 .75rem;
+    line-height: 1.5rem; }
+  #contact img {
+    width: 1rem;
+    height: 1rem;
+    padding-right: .375rem;
+    position: relative;
+    top: 2px; }
+  #contact #email {
+    top: 3px; }
+
+h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 1rem 0 .25rem 0; }
+
+h3 {
+  font-size: 1.17rem;
+  line-height: 1.625rem; }
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.25rem; }
+
+h5 {
+  font-size: .83rem;
+  margin: 0 0 .125rem 0;
+  line-height: 1.25rem; }
+
+ul, li {
+  width: 90%;
+  text-align: left;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-left: 1rem; }
+
+li {
+  line-height: 1.25rem;
+  margin-bottom: .25rem; }
+
+#bachelor-of-arts-in-interdisciplinary-studies {
+  margin-top: 1rem; }
+
+#tech-skills-col div:nth-child(1) {
+  margin-top: -1rem; }
+
+.skills h3 {
+  margin-top: 1rem;
+  text-transform: uppercase; }
+
+.lineBreak {
+  width: 75%;
+  height: .5rem;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #CCCCCC;
+  border-left: none; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+  body a, body a:visited {
+    text-decoration: none;
+    color: black; }
+
+#Nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+  background-color: black; }
+  #Nav #nicoleSandry {
+    /*background-color: pink;*/
+    flex: 0 0 auto;
+    order: 1;
+    color: white; }
+  #Nav .NavLink {
+    /*border: 2px dashed purple;*/
+    flex: 0 0 auto;
+    order: 2;
+    color: white; }
+
+#footer {
+  /*border: 2px solid black;*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-bottom: 1rem; }
+  #footer a {
+    /*background-color: pink;*/ }

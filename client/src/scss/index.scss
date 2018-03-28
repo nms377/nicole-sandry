@@ -1,29 +1,49 @@
-* {
-  margin: 0;
+@import "./partials/reset";
+@import "./partials/_clearfix";
+@import "./partials/work";
+@import "./partials/resume";
+
+body {
   font-family: Arial, Helvetica, sans-serif;
-}
 
-a {
-	text-decoration: none;
-}
-
-/* Navigation Links for Main Nav & Photography Nav */
-.Nav-Link, .Sub-Nav{
-    display: inline;
-    list-style: none;
-}
-
-#Nav {
-  border: 2px solid lime;
-
-  display: flex;
-  flex-direction: column;
-
-  #Nicole-Sandry {
-    background-color: pink;
-
-  	flex: 0 0 auto;
-  	align-self: center;
+  a, a:visited {
+    text-decoration: none;
+    color: rgb(0,0,0);
   }
 }
 
+#Nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+  background-color: rgb(0,0,0);
+
+  #nicoleSandry {
+    /*background-color: pink;*/
+
+  	flex: 0 0 auto;
+    order: 1;
+    color: rgb(255,255,255);
+  }
+
+  .NavLink {
+    /*border: 2px dashed purple;*/
+    flex: 0 0 auto;
+    order: 2;
+    color: rgb(255,255,255);
+  }
+}
+
+#footer {
+  /*border: 2px solid black;*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+
+  a {
+    /*background-color: pink;*/
+  }
+}
