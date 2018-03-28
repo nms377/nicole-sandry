@@ -5,10 +5,10 @@ class Nav extends Component {
 	render() {
 		return (
 			<div id="Nav">
-				<Link to='/' id="Nicole-Sandry">Nicole Sandry</Link>
-				<Link className="Nav-Link" to='/work'>Work</Link>
-				<Link className="Nav-Link" to='/resume'>Resume</Link>
-				<Link className="Nav-Link" to='/about'>About</Link>
+				<Link to='/' id="nicoleSandry">Nicole Sandry</Link>
+					<Link className="NavLink" to='/work'>Work</Link>
+					<Link className="NavLink" to='/resume'>Resume</Link>
+					<Link className="NavLink" to='/about'>About</Link>
 			</div>
 		)
 	}
