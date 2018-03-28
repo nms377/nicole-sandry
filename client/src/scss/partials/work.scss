@@ -1,0 +1,75 @@
+#workContainer {
+	/*border: 2px dotted black;*/
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 1.5rem 0;
+	font-size: .85rem;
+}
+
+.work {
+	border: 1px solid #ccc;
+	// style for container
+	flex: 0 0 auto;
+	width: 80%;
+	align-self: center;
+	margin-bottom: 1.25rem;
+	padding-bottom: .75rem;
+	text-align: left;
+
+	// style for contents
+	display: flex;
+	flex-flow: column wrap;
+
+	.workImg {
+		flex: 0 0 auto;
+		order: 0;
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		object-position: 50% top;
+	}
+
+	.company {
+		flex: 0 0 auto;
+		order: 1;
+		font-size: 1.125rem;
+		font-weight: bold;
+		margin: .5rem 0 .5rem 1rem;
+	}
+
+	.position {
+		flex: 0 0 auto;
+		order: 2;
+		font-size: 1rem;
+		margin-bottom: .5rem;
+		margin-left: 1rem;
+	}
+
+	.description {
+		flex: 0 0 auto;
+		order: 3;
+		margin-bottom: .625rem;
+		line-height: 1rem;
+		padding: 0 1rem;
+	}
+
+	.workContributions {
+		flex: 0 0 auto;
+		order: 4;
+
+		.contributions {
+			font-size: 1rem;
+			margin: 0 0 .125rem 1rem;
+		}
+
+		ul, li {
+			width: 90%;
+			text-align: left;
+			list-style-position: outside;
+			list-style-type: disc;
+			margin-left:  1.5rem;
+			margin-bottom: .25rem;
+			line-height: 1.25rem;
+		}
+	}
+}
