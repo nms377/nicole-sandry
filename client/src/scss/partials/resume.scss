@@ -1,0 +1,118 @@
+#Resume {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 1.5rem 0;
+	text-align: left;
+	font-size: .83rem;
+}
+
+#resume-container {
+	flex: 0 0 auto;
+	align-self: center;
+	width: 80%;
+
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#contact-header {
+	font-size: 1.25rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#contact {
+	flex: 0 0 auto;
+	align-self: center;
+	margin: .25rem 0 0 0;
+	width: 14.75rem;
+	font-size: 1rem;
+
+	li {
+		list-style-type: none;
+		text-align: left;
+		margin: 0 0 0 .75rem;
+		line-height: 1.5rem;
+	}
+
+	// contact icons
+	img {
+		width: 1rem;
+		height: 1rem;
+		padding-right: .375rem;
+		position: relative;
+		top: 2px;
+	}
+
+	// adjust email icon to align with text
+	#email {
+		top: 3px;
+	}
+}
+
+// Section Headers
+h2 {
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	margin: 1rem 0 .25rem 0;
+}
+
+// Position & School
+h3 {
+	font-size: 1.17rem;
+	line-height: 1.625rem;
+}
+
+// Company
+h4 {
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+// Dates
+h5 {
+	font-size: .83rem;
+	margin: 0 0 .125rem 0;
+	line-height: 1.25rem;
+}
+
+// Responsibilities
+ul, li {
+			width: 90%;
+			text-align: left;
+			list-style-position: outside;
+			list-style-type: disc;
+			margin-left: 1rem;
+}
+
+li {
+	line-height: 1.25rem;
+	margin-bottom: .25rem;
+}
+
+#bachelor-of-arts-in-interdisciplinary-studies {
+	margin-top: 1rem;
+}
+
+// fix the extra spacing between Technical Skills and Languages
+#tech-skills-col {
+	div:nth-child(1){
+		margin-top: -1rem;
+	}
+}
+
+.skills {
+	h3 {
+		margin-top: 1rem;
+		text-transform: uppercase;
+	}
+}
+
+.lineBreak {
+	width: 75%;
+	height: .5rem;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: none;
+}
