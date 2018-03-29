@@ -13,7 +13,7 @@ class Resume extends Component {
 			<div id="resume-container">
 				<h1 id="contact-header">Contact</h1>
 				<ol id="contact">
-					<li><a href="mailto:nsandry@gmail.com" target="_blank" rel="noopener noreferrer"><img id="email" src={Email} alt="Email Icon"/>nsandry@gmail.com</a></li>
+					<li><a href="mailto:nsandry@gmail.com"><img id="email" src={Email} alt="Email Icon"/>nsandry@gmail.com</a></li>
 					<li><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="GitHub Icon"/>Github.com/nms377</a></li>
 					<li><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="LinkedIn Icon"/>LinkedIn.com/nicolesandry</a></li>
 				</ol>
