@@ -31,9 +31,9 @@ class Nav extends Component {
 				{
 					this.state.showMobileMenu?
 					<div id="mobile-nav">
-						<Link className="NavLinkMobile" to='/work'>Work</Link>
-						<Link className="NavLinkMobile" to='/resume'>Resume</Link>
-						<Link className="NavLinkMobile" to='/about'>About</Link>
+						<Link className="NavLinkMobile" to='/work' onClick={() => this.operation()}>Work</Link>
+						<Link className="NavLinkMobile" to='/resume' onClick={() => this.operation()}>Resume</Link>
+						<Link className="NavLinkMobile" to='/about' onClick={() => this.operation()}>About</Link>
 					</div>
 					:null
 				}
