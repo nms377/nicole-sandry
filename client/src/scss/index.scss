@@ -12,20 +12,25 @@ body {
   }
 }
 
+
 #Nav {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 1rem 0;
-  background-color: rgb(0,0,0);
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .5rem 0;
+  background-color: rgb(125,125,125);
 
   #nicoleSandry {
     /*background-color: pink;*/
 
   	flex: 0 0 auto;
     order: 1;
+    width: 90%;
     color: rgb(255,255,255);
+    background-color: green;
+    margin-left: .5rem;
   }
 
   .NavLink {
@@ -33,7 +38,41 @@ body {
     flex: 0 0 auto;
     order: 2;
     color: rgb(255,255,255);
+    display: none;
   }
+}
+
+#mobile-nav{
+  flex: 0 0 auto;
+  order: 3;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  /*display: none;*/
+  background-color: rgba(255,255,255,1.0);
+  background: #fff;
+  position: absolute;
+  top: 3.25rem;
+
+  // use z-index to overlap SVG images
+  z-index: 1;
+
+  .NavLinkMobile {
+    flex: 0 0 auto;
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
+    text-align: center;
+    padding: .75rem 0;
+  }
+}
+
+#mobile-icon {
+  border: 2px solid pink;
+  flex: 0 0 auto;
+  order: 2;
+  margin-right: .5rem;
 }
 
 #footer {

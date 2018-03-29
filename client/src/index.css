@@ -216,20 +216,52 @@ body {
 #Nav {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 1rem 0;
-  background-color: black; }
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .5rem 0;
+  background-color: #7d7d7d; }
   #Nav #nicoleSandry {
     /*background-color: pink;*/
     flex: 0 0 auto;
     order: 1;
-    color: white; }
+    width: 90%;
+    color: white;
+    background-color: green;
+    margin-left: .5rem; }
   #Nav .NavLink {
     /*border: 2px dashed purple;*/
     flex: 0 0 auto;
     order: 2;
-    color: white; }
+    color: white;
+    display: none; }
+
+#mobile-nav {
+  flex: 0 0 auto;
+  order: 3;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  /*display: none;*/
+  background-color: white;
+  background: #fff;
+  position: absolute;
+  top: 3.25rem;
+  z-index: 1; }
+  #mobile-nav .NavLinkMobile {
+    flex: 0 0 auto;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: .75rem 0; }
+
+#mobile-icon {
+  border: 2px solid pink;
+  flex: 0 0 auto;
+  order: 2;
+  margin-right: .5rem; }
 
 #footer {
   /*border: 2px solid black;*/
