@@ -21,9 +21,11 @@ class Nav extends Component {
 			<div id="nav-container">
 				<div id="Nav">
 					<Link to='/' id="nicoleSandry">Nicole Sandry</Link>
-					<Link className="NavLink" to='/work'>Work</Link>
-					<Link className="NavLink" to='/resume'>Resume</Link>
-					<Link className="NavLink" to='/about'>About</Link>
+					<div id="desktop-nav">
+						<Link className="NavLink" to='/work'>Work</Link>
+						<Link className="NavLink" to='/resume'>Resume</Link>
+						<Link className="NavLink" to='/about'>About</Link>
+					</div>
 					<div id="mobile-icon" onClick={() => this.operation()}>
 						<img src={List} alt="Mobile menu list icon" />
 					</div>
