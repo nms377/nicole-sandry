@@ -81,6 +81,9 @@ table {
   text-align: left;
   display: flex;
   flex-flow: column wrap; }
+  @media screen and (min-width: 480px) {
+    .work {
+      max-width: 800px; } }
   .work .workImg {
     flex: 0 0 auto;
     order: 0;
@@ -88,18 +91,27 @@ table {
     height: 200px;
     object-fit: cover;
     object-position: 50% top; }
+    @media screen and (min-width: 480px) {
+      .work .workImg {
+        height: 480px; } }
   .work .company {
     flex: 0 0 auto;
     order: 1;
     font-size: 1.125rem;
     font-weight: bold;
     margin: .5rem 0 .5rem 1rem; }
+    @media screen and (min-width: 480px) {
+      .work .company {
+        font-size: 1.5rem; } }
   .work .position {
     flex: 0 0 auto;
     order: 2;
     font-size: 1rem;
     margin-bottom: .5rem;
     margin-left: 1rem; }
+    @media screen and (min-width: 480px) {
+      .work .position {
+        font-size: 1.125rem; } }
   .work .description {
     flex: 0 0 auto;
     order: 3;
@@ -112,6 +124,9 @@ table {
     .work .workContributions .contributions {
       font-size: 1rem;
       margin: 0 0 .125rem 1rem; }
+      @media screen and (min-width: 480px) {
+        .work .workContributions .contributions {
+          font-size: 1.125rem; } }
     .work .workContributions ul, .work .workContributions li {
       width: 90%;
       text-align: left;

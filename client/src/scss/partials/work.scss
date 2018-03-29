@@ -16,6 +16,10 @@
 	padding-bottom: .75rem;
 	text-align: left;
 
+	@media screen and (min-width: 480px) {
+		max-width: 800px;
+	}
+
 	// style for contents
 	display: flex;
 	flex-flow: column wrap;
@@ -27,6 +31,10 @@
 		height: 200px;
 		object-fit: cover;
 		object-position: 50% top;
+
+		@media screen and (min-width: 480px) {
+			height: 480px;
+		}
 	}
 
 	.company {
@@ -35,6 +43,10 @@
 		font-size: 1.125rem;
 		font-weight: bold;
 		margin: .5rem 0 .5rem 1rem;
+
+		@media screen and (min-width: 480px) {
+			font-size: 1.5rem;
+		}
 	}
 
 	.position {
@@ -43,6 +55,10 @@
 		font-size: 1rem;
 		margin-bottom: .5rem;
 		margin-left: 1rem;
+
+		@media screen and (min-width: 480px) {
+			font-size: 1.125rem;
+		}
 	}
 
 	.description {
@@ -60,6 +76,10 @@
 		.contributions {
 			font-size: 1rem;
 			margin: 0 0 .125rem 1rem;
+
+			@media screen and (min-width: 480px) {
+				font-size: 1.125rem;
+			}
 		}
 
 		ul, li {
