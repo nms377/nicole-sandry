@@ -68,7 +68,7 @@ table {
   /*border: 2px dotted black;*/
   display: flex;
   flex-flow: column nowrap;
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
   font-size: .85rem; }
 
 .work {
@@ -76,7 +76,7 @@ table {
   flex: 0 0 auto;
   width: 80%;
   align-self: center;
-  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
   padding-bottom: .75rem;
   text-align: left;
   display: flex;
@@ -217,18 +217,16 @@ body {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: .5rem 0;
   background-color: #7d7d7d; }
   #Nav #nicoleSandry {
     flex: 0 0 auto;
     order: 1;
-    /*width: 80%;*/
     font-size: 1.75rem;
     color: white;
-    margin-right: 30%;
-    /*background-color: green;*/ }
+    margin-left: 2rem; }
   #Nav .NavLink {
     flex: 0 0 auto;
     order: 2;
@@ -254,7 +252,10 @@ body {
 
 #mobile-icon {
   flex: 0 0 auto;
-  order: 2; }
+  order: 2;
+  color: white;
+  fill: currentColor;
+  padding-right: 2rem; }
   #mobile-icon :hover {
     cursor: pointer; }
 

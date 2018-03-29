@@ -12,12 +12,11 @@ body {
   }
 }
 
-
 #Nav {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: .5rem 0;
   background-color: rgb(125,125,125);
@@ -25,11 +24,9 @@ body {
   #nicoleSandry {
   	flex: 0 0 auto;
     order: 1;
-    /*width: 80%;*/
     font-size: 1.75rem;
     color: rgb(255,255,255);
-    margin-right: 30%;
-    /*background-color: green;*/
+    margin-left: 2rem;
   }
 
   .NavLink {
@@ -49,7 +46,7 @@ body {
   margin: 0;
   background-color: rgba(255,255,255,1.0);
   
-  // move div element below the Nav bar when dispalyed
+  // move div element below the Nav bar when displayed
   position: absolute;
   top: 3rem;
 
@@ -67,6 +64,9 @@ body {
 #mobile-icon {
   flex: 0 0 auto;
   order: 2;
+  color: rgb(255,255,255);
+  fill: currentColor;
+  padding-right: 2rem;
 
   :hover {
     cursor: pointer;
