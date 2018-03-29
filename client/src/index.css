@@ -222,15 +222,14 @@ body {
   padding: .5rem 0;
   background-color: #7d7d7d; }
   #Nav #nicoleSandry {
-    /*background-color: pink;*/
     flex: 0 0 auto;
     order: 1;
-    width: 90%;
+    /*width: 80%;*/
+    font-size: 1.75rem;
     color: white;
-    background-color: green;
-    margin-left: .5rem; }
+    margin-right: 30%;
+    /*background-color: green;*/ }
   #Nav .NavLink {
-    /*border: 2px dashed purple;*/
     flex: 0 0 auto;
     order: 2;
     color: white;
@@ -243,31 +242,24 @@ body {
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
-  padding: 0;
-  /*display: none;*/
   background-color: white;
-  background: #fff;
   position: absolute;
-  top: 3.25rem;
+  top: 3rem;
   z-index: 1; }
   #mobile-nav .NavLinkMobile {
     flex: 0 0 auto;
     color: black;
-    border: 1px solid black;
     text-align: center;
-    padding: .75rem 0; }
+    padding: .5rem 0; }
 
 #mobile-icon {
-  border: 2px solid pink;
   flex: 0 0 auto;
-  order: 2;
-  margin-right: .5rem; }
+  order: 2; }
+  #mobile-icon :hover {
+    cursor: pointer; }
 
 #footer {
-  /*border: 2px solid black;*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   padding-bottom: 1rem; }
-  #footer a {
-    /*background-color: pink;*/ }
