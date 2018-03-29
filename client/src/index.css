@@ -227,11 +227,16 @@ body {
     font-size: 1.75rem;
     color: white;
     margin-left: 2rem; }
-  #Nav .NavLink {
+  #Nav #desktop-nav {
     flex: 0 0 auto;
     order: 2;
-    color: white;
     display: none; }
+    @media screen and (min-width: 480px) {
+      #Nav #desktop-nav {
+        display: inline; } }
+  #Nav .NavLink {
+    color: white;
+    padding-right: 2rem; }
 
 #mobile-nav {
   flex: 0 0 auto;
@@ -249,6 +254,9 @@ body {
     color: black;
     text-align: center;
     padding: .5rem 0; }
+  @media screen and (min-width: 480px) {
+    #mobile-nav {
+      display: none; } }
 
 #mobile-icon {
   flex: 0 0 auto;
@@ -258,9 +266,12 @@ body {
   padding-right: 2rem; }
   #mobile-icon :hover {
     cursor: pointer; }
+  @media screen and (min-width: 480px) {
+    #mobile-icon {
+      display: none; } }
 
 #footer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  padding-bottom: 1rem; }
+  justify-content: space-between;
+  padding: 0 2rem 1rem 2rem; }
