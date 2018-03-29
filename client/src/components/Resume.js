@@ -51,29 +51,29 @@ class Resume extends Component {
 				<h2 id="technical-skills">Technical Skills</h2>
 				<div id="tech-skills-col">
 					<div className="skills">
-						<h3 id="languages">Languages</h3>
+						<h4 id="languages">Languages</h4>
 						<p>
 							JavaScript, HTML5, CSS, SQL
 						</p>
 					</div>
 					<div className="skills">
-						<h3 id="frontend">Frontend</h3>
+						<h4 id="frontend">Frontend</h4>
 						<p>
 							ES6, React, Redux, CSS3, SASS
 						</p>
 					</div>
 					<div className="skills">
-						<h3 id="server-side">Server-Side</h3>
+						<h4 id="server-side">Server-Side</h4>
 						<p>
 							NodeJS, Express, Sequelize ORM
 						</p>
 					</div>
 					<div className="skills">
-						<h3 id="database">Database</h3>
+						<h4 id="database">Database</h4>
 							<p>PostgreSQL </p>
 					</div>
 					<div className="skills">
-						<h3 id="web-skills">Web Skills</h3>
+						<h4 id="web-skills">Web Skills</h4>
 						<ul>
 							<li>Responsive/Mobile First Web Development</li>
 							<li>TDD/BDD</li>
@@ -83,7 +83,7 @@ class Resume extends Component {
 						</ul>
 					</div>
 					<div className="skills">
-						<h3 id="business-development">Business Development</h3>
+						<h4 id="business-development">Business Development</h4>
 						<ul>
 							<li>Adobe InDesign CC</li>
 							<li>Adobe Photoshop CC</li>
