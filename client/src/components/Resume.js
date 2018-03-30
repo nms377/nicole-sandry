@@ -19,7 +19,7 @@ const Resume = () => {
 				</ol>
 			</div>
 			<hr className="lineBreak"/>
-			<div id="dev-exp">
+			<div id="right-container">
 				<h2 id="development-experience">Development Experience</h2>
 				<h3 id="hele" className="position">Developer</h3>
 				<h4 id="-hele-io-https-hele-io-" className="company"><a href="https://hele.io/" target="_blank" rel="noopener noreferrer">Hele.io</a></h4>
@@ -30,9 +30,7 @@ const Resume = () => {
 					<li>Designed the User Interface with React, SASS, and Gulp</li>
 					<li>Designed the logo</li>
 				</ul>
-			</div>
 			<hr className="lineBreak"/>
-			<div id="pro-exp">
 				<h2 id="professional-experience">Professional Experience</h2>
 				<h3 id="executive-assistant" className="position">Office Manager & Social Media Manager</h3>
 				<h4 id="handcrafted-restaurants-llc" className="company"><a href="http://www.handcraftedrestaurants.com/" target="_blank" rel="noopener noreferrer">Handcrafted Restaurants</a></h4>
@@ -44,9 +42,7 @@ const Resume = () => {
 					<li>Established menu editing protocols to maintain brand and product consistency across three restaurant concepts</li>
 					<li>Aided in the launch of two restaurant concepts and two restaurant acquisitions</li>
 				</ul>
-			</div>	
 			<hr className="lineBreak"/>
-			<div id="edu">
 				<h2 id="education">Education</h2>
 				<h3 id="devleague">Fullstack JavaScript Web Engineering</h3>
 				<h5 id="devleague">DevLeague, Nov 2016 - May 2017</h5>
@@ -55,9 +51,9 @@ const Resume = () => {
 				<h5 id="new-york-university-gallatin-school-of-individualized-study-2011-2013">New York University - Gallatin School of Individualized Study, 2011 – 2013</h5>
 			</div>
 			<hr className="lineBreak"/>				
-			<div id="skills-container">
-				<h2 id="technical-skills">Technical Skills</h2>
-				<div id="tech-skills-col">
+				<div id="skills-container">
+					<h2 id="technical-skills">Technical Skills</h2>
+					<div id="tech-skills-col">
 					<div className="skills">
 						<h4 id="languages">Languages</h4>
 						<p>

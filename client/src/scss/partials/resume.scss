@@ -6,9 +6,16 @@
 	font-size: .83rem;
 	
 	@media screen and (min-width: 480px) {
+		background-color: yellow;
 		padding: 0;
-	}
+		width: 100%;
+		height: auto;
 
+/*		* {
+			box-sizing: border-box;
+		}*/
+
+	}
 }
 
 #resume-container {
@@ -20,9 +27,34 @@
 	flex-flow: column nowrap;
 
 	@media screen and (min-width: 480px) {
-		display: block;
-		width: 100%;
 		background-color: powderblue;
+		flex-flow: column wrap;
+		height: 1080px;
+		width: 100%;
+
+		#contact-container, #skills-container, #right-container {
+			flex: 1;
+			width: 30%;
+		}
+
+		#contact-container {
+			background-color: pink;
+			flex: 0 0 15%;
+			order: 1;
+			margin-top: 0;
+		}
+
+		#skills-container {
+			background-color: lime;
+			order: 2;
+		}
+
+		#right-container {
+			background-color: orange;
+			flex: 0 0 100%;
+			order: 3;
+			width: 70%;
+		}
 
 	}
 }
@@ -61,29 +93,6 @@
 		#email {
 			top: 3px;
 		}
-	}
-
-	@media screen and (min-width: 480px) {
-		/*order: 1;*/
-		flex: 0 0 30%;
-		align-self: flex-start;
-		margin: 0;
-		width: 15.25rem;
-	
-		background-color: pink;
-	}
-}
-
-#dev-exp, #pro-exp, #edu {
-	@media screen and (min-width: 480px) {
-		/*order: 2;*/
-		flex: 0 0 auto;
-		background-color: orange;
-		position: relative;
-		top: 0;
-		right: 0;
-		width: 81%;
-		align-self: flex-end;
 	}
 }
 
@@ -139,19 +148,11 @@ li {
 }
 
 #skills-container {
-
-.skills {
-	h4 {
-		margin-top: 1rem;
-		text-transform: uppercase;
-	}
-}
-
-	@media screen and (min-width: 480px) {
-		/*order: 1;*/
-		flex: 0 0 auto;
-		background-color: lime;
-		width: 15.25rem;
+	.skills {
+		h4 {
+			margin-top: 1rem;
+			text-transform: uppercase;
+		}
 	}
 }
 
