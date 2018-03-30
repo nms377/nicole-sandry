@@ -10,11 +10,6 @@
 		padding: 0;
 		width: 100%;
 		height: auto;
-
-/*		* {
-			box-sizing: border-box;
-		}*/
-
 	}
 }
 
@@ -29,9 +24,11 @@
 	@media screen and (min-width: 480px) {
 		background-color: powderblue;
 		flex-flow: column wrap;
+		// must set height to stack elements
 		height: 1080px;
 		width: 100%;
 
+		// must set this to stack elements
 		#contact-container, #skills-container, #right-container {
 			flex: 1;
 			width: 30%;
