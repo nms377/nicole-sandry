@@ -4,6 +4,11 @@
 	padding: 1.5rem 0;
 	text-align: left;
 	font-size: .83rem;
+	
+	@media screen and (min-width: 480px) {
+		padding: 0;
+	}
+
 }
 
 #resume-container {
@@ -13,40 +18,72 @@
 
 	display: flex;
 	flex-flow: column nowrap;
+
+	@media screen and (min-width: 480px) {
+		display: block;
+		width: 100%;
+		background-color: powderblue;
+
+	}
 }
 
-#contact-header {
-	font-size: 1.25rem;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-#contact {
+#contact-container {
 	flex: 0 0 auto;
 	align-self: center;
 	margin: .25rem 0 0 0;
 	width: 14.75rem;
 	font-size: 1rem;
 
-	li {
-		list-style-type: none;
-		text-align: left;
-		margin: 0 0 0 .75rem;
-		line-height: 1.5rem;
+	#contact-header {
+		font-size: 1.25rem;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
-	// contact icons
-	img {
-		width: 1rem;
-		height: 1rem;
-		padding-right: .375rem;
+	#contact {
+		li {
+			list-style-type: none;
+			text-align: left;
+			margin: 0 0 0 .75rem;
+			line-height: 1.5rem;
+		}
+
+		// contact icons
+		img {
+			width: 1rem;
+			height: 1rem;
+			padding-right: .375rem;
+			position: relative;
+			top: 2px;
+		}
+
+		// adjust email icon to align with text
+		#email {
+			top: 3px;
+		}
+	}
+
+	@media screen and (min-width: 480px) {
+		/*order: 1;*/
+		flex: 0 0 30%;
+		align-self: flex-start;
+		margin: 0;
+		width: 15.25rem;
+	
+		background-color: pink;
+	}
+}
+
+#dev-exp, #pro-exp, #edu {
+	@media screen and (min-width: 480px) {
+		/*order: 2;*/
+		flex: 0 0 auto;
+		background-color: orange;
 		position: relative;
-		top: 2px;
-	}
-
-	// adjust email icon to align with text
-	#email {
-		top: 3px;
+		top: 0;
+		right: 0;
+		width: 81%;
+		align-self: flex-end;
 	}
 }
 
@@ -101,10 +138,20 @@ li {
 	}
 }
 
+#skills-container {
+
 .skills {
 	h4 {
 		margin-top: 1rem;
 		text-transform: uppercase;
+	}
+}
+
+	@media screen and (min-width: 480px) {
+		/*order: 1;*/
+		flex: 0 0 auto;
+		background-color: lime;
+		width: 15.25rem;
 	}
 }
 
@@ -115,4 +162,8 @@ li {
 	border-right: none;
 	border-bottom: 1px solid #CCCCCC;
 	border-left: none;
+
+	@media screen and (min-width: 480px) {
+		display: none;
+	}
 }
