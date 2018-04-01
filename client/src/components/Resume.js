@@ -42,6 +42,14 @@ const Resume = () => {
 					<li>Established menu editing protocols to maintain brand and product consistency across three restaurant concepts</li>
 					<li>Aided in the launch of two restaurant concepts and two restaurant acquisitions</li>
 				</ul>
+				<h3 id="resident-assistant">Resident Assistant</h3>
+				<h4 id="office-of-residential-life-housing-services-at-new-york-university">Office of Residential Life &amp; Housing Services at New York University</h4>
+				<h5 id="ny-aug-2012-may-2013">New York, NY Aug 2012 – May 2013</h5>
+				<ul>
+					<li>Advocated for and represented two floors of 49 students by communicating concerns to supervisors and other building team members</li>
+					<li>Collaborated with a student staff of 16 and 3 professional staff members on programs and administrative responsibilities to foster a positive living and learning community</li>
+					<li>Received intensive training and professional development in leadership, mediation, and communication with students and families</li>
+				</ul>
 			<hr className="lineBreak"/>
 				<h2 id="education">Education</h2>
 				<h3 id="devleague">Fullstack JavaScript Web Engineering</h3>
