@@ -144,10 +144,18 @@ table {
   font-size: .83rem; }
   @media screen and (min-width: 480px) {
     #Resume {
-      background-color: yellow;
-      padding: 0;
+      /*background-color: yellow;*/
       width: 100%;
-      height: auto; } }
+      height: auto;
+      font-size: 1rem; }
+      #Resume h2 {
+        font-size: 1.5rem; }
+      #Resume h3 {
+        font-size: 1.25rem; }
+      #Resume h4 {
+        font-size: 1.17rem; }
+      #Resume h5 {
+        font-size: 1rem; } }
 
 #resume-container {
   flex: 0 0 auto;
@@ -157,26 +165,39 @@ table {
   flex-flow: column nowrap; }
   @media screen and (min-width: 480px) {
     #resume-container {
-      background-color: powderblue;
+      /*background-color: powderblue;*/
       flex-flow: column wrap;
-      height: 1080px;
-      width: 100%; }
+      height: 725px;
+      width: 85%; }
       #resume-container #contact-container, #resume-container #skills-container, #resume-container #right-container {
         flex: 1;
         width: 30%; }
       #resume-container #contact-container {
-        background-color: pink;
-        flex: 0 0 15%;
+        /*background-color: pink;*/
+        flex: 0 0 auto;
         order: 1;
-        margin-top: 0; }
+        margin: 0;
+        align-self: flex-start;
+        border-right: 1px solid black;
+        padding-bottom: 1rem; }
+        #resume-container #contact-container #contact-header {
+          text-align: left;
+          margin-left: .75rem; }
       #resume-container #skills-container {
-        background-color: lime;
-        order: 2; }
+        /*background-color: lime;*/
+        order: 2;
+        align-self: flex-start;
+        border-right: 1px solid black; }
+        #resume-container #skills-container .skills, #resume-container #skills-container h2 {
+          margin-left: 1rem; }
       #resume-container #right-container {
-        background-color: orange;
+        /*background-color: orange;*/
         flex: 0 0 100%;
         order: 3;
-        width: 70%; } }
+        width: 67%;
+        align-self: flex-end; }
+        #resume-container #right-container h2:nth-child(1) {
+          margin: 0 0 .25rem 0; } }
 
 #contact-container {
   flex: 0 0 auto;
@@ -205,7 +226,8 @@ table {
 h2 {
   font-size: 1.25rem;
   text-transform: uppercase;
-  margin: 1rem 0 .25rem 0; }
+  margin: 1rem 0 .25rem 0;
+  letter-spacing: .075rem; }
 
 h3 {
   font-size: 1.17rem;
@@ -222,12 +244,12 @@ h5 {
 
 ul, li {
   width: 90%;
-  text-align: left;
   list-style-position: outside;
   list-style-type: disc;
   margin-left: 1rem; }
 
 li {
+  text-align: left;
   line-height: 1.25rem;
   margin-bottom: .25rem; }
 
@@ -235,11 +257,15 @@ li {
   margin-top: 1rem; }
 
 #tech-skills-col div:nth-child(1) {
-  margin-top: -1rem; }
+  margin-top: -.5rem; }
+  @media screen and (min-width: 480px) {
+    #tech-skills-col div:nth-child(1) {
+      margin-top: -.25rem; } }
 
 #skills-container .skills h4 {
   margin-top: 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: .0625rem; }
 
 .lineBreak {
   width: 75%;
@@ -271,7 +297,9 @@ body {
     order: 1;
     font-size: 1.75rem;
     color: white;
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    letter-spacing: .125rem;
+    text-transform: uppercase; }
   #Nav #desktop-nav {
     flex: 0 0 auto;
     order: 2;
