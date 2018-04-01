@@ -167,7 +167,7 @@ table {
     #resume-container {
       /*background-color: powderblue;*/
       flex-flow: column wrap;
-      height: 725px;
+      height: 950px;
       width: 85%; }
       #resume-container #contact-container, #resume-container #skills-container, #resume-container #right-container {
         flex: 1;
@@ -179,10 +179,11 @@ table {
         margin: 0;
         align-self: flex-start;
         border-right: 1px solid black;
-        padding-bottom: 1rem; }
+        /*padding-bottom: 1rem;*/ }
         #resume-container #contact-container #contact-header {
           text-align: left;
-          margin-left: .75rem; }
+          margin-left: .75rem;
+          font-size: 1.5rem; }
       #resume-container #skills-container {
         /*background-color: lime;*/
         order: 2;
@@ -226,7 +227,7 @@ table {
 h2 {
   font-size: 1.25rem;
   text-transform: uppercase;
-  margin: 1rem 0 .25rem 0;
+  margin: 1.5rem 0 .25rem 0;
   letter-spacing: .075rem; }
 
 h3 {
@@ -253,7 +254,7 @@ li {
   line-height: 1.25rem;
   margin-bottom: .25rem; }
 
-#bachelor-of-arts-in-interdisciplinary-studies {
+#bachelor-of-arts-in-interdisciplinary-studies, #resident-assistant {
   margin-top: 1rem; }
 
 #tech-skills-col div:nth-child(1) {
