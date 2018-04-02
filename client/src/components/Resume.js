@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Email from '../assets/footer/Email.svg';
 import GitHub from '../assets/footer/GitHub.svg';
 import LinkedIn from '../assets/footer/LinkedIn.svg';
+import Download from '../assets/Download.svg';
+import PDF from '../assets/Nicole-Sandry-Resume.pdf';
 
 const Resume = () => {
 
@@ -16,6 +18,7 @@ const Resume = () => {
 					<li><a href="mailto:nsandry@gmail.com"><img id="email" src={Email} alt="Email Icon"/>nsandry@gmail.com</a></li>
 					<li><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="GitHub Icon"/>Github.com/nms377</a></li>
 					<li><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="LinkedIn Icon"/>LinkedIn.com/nicolesandry</a></li>
+					<li><a href={PDF} download><img src={Download} alt="Download Resume" />Download Resume</a></li>
 				</ol>
 			</div>
 			<hr className="lineBreak"/>
