@@ -15,10 +15,10 @@ const Resume = () => {
 			<div id="contact-container">
 				<h1 id="contact-header">Contact</h1>
 				<ol id="contact">
-					<li><a href="mailto:nsandry@gmail.com"><img id="email" src={Email} alt="Email Icon"/>nsandry@gmail.com</a></li>
-					<li><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="GitHub Icon"/>Github.com/nms377</a></li>
-					<li><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="LinkedIn Icon"/>LinkedIn.com/nicolesandry</a></li>
-					<li><a href={PDF} download><img src={Download} alt="Download Resume" />Download Resume</a></li>
+					<li><a href="mailto:nsandry@gmail.com"><object id="Email" type="image/svg+xml" data={Email}></object>nsandry@gmail.com</a></li>
+					<li><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={GitHub}/>Github.com/nms377</a></li>
+					<li><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={LinkedIn}/>LinkedIn.com/nicolesandry</a></li>
+					<li><a href={PDF} download><object type="image/svg+xml" data={Download} />Download Resume</a></li>
 				</ol>
 			</div>
 			<hr className="lineBreak"/>
