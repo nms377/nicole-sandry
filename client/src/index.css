@@ -79,6 +79,7 @@ table {
   margin-top: 1.25rem;
   padding-bottom: .75rem;
   text-align: left;
+  background-color: white;
   display: flex;
   flex-flow: column wrap; }
   @media screen and (min-width: 480px) {
@@ -142,7 +143,7 @@ table {
   padding: 1.5rem 0;
   text-align: left;
   font-size: .83rem; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 922px) {
     #Resume {
       /*background-color: yellow;*/
       width: 100%;
@@ -163,11 +164,11 @@ table {
   width: 80%;
   display: flex;
   flex-flow: column nowrap; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 922px) {
     #resume-container {
       /*background-color: powderblue;*/
       flex-flow: column wrap;
-      height: 950px;
+      height: 1080px;
       width: 85%; }
       #resume-container #contact-container, #resume-container #skills-container, #resume-container #right-container {
         flex: 1;
@@ -183,14 +184,19 @@ table {
         #resume-container #contact-container #contact-header {
           text-align: left;
           margin-left: .75rem;
-          font-size: 1.5rem; }
+          font-size: 1.5rem; } }
+  @media screen and (min-width: 922px) and (min-width: 1225px) {
+    #resume-container {
+      width: 950px; } }
+  @media screen and (min-width: 922px) {
       #resume-container #skills-container {
         /*background-color: lime;*/
         order: 2;
         align-self: flex-start;
         border-right: 1px solid black; }
         #resume-container #skills-container .skills, #resume-container #skills-container h2 {
-          margin-left: 1rem; }
+          margin-left: 1rem;
+          padding-right: .75rem; }
       #resume-container #right-container {
         /*background-color: orange;*/
         flex: 0 0 100%;
@@ -210,19 +216,29 @@ table {
     font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase; }
-  #contact-container #contact li {
-    list-style-type: none;
-    text-align: left;
-    margin: 0 0 0 .75rem;
-    line-height: 1.5rem; }
-  #contact-container #contact img {
-    width: 1rem;
-    height: 1rem;
-    padding-right: .375rem;
-    position: relative;
-    top: 2px; }
-  #contact-container #contact #email {
-    top: 3px; }
+  #contact-container #contact {
+    /*		img {
+			width: 1rem;
+			height: 1rem;
+			padding-right: .375rem;
+			position: relative;
+			top: 2px;
+		}*/ }
+    #contact-container #contact li {
+      list-style-type: none;
+      text-align: left;
+      margin: 0 0 0 .75rem;
+      line-height: 1.5rem; }
+    #contact-container #contact object {
+      width: 1rem;
+      height: 1rem;
+      padding-right: .375rem;
+      position: relative;
+      top: 2px; }
+    #contact-container #contact a:hover object {
+      fill: yellow; }
+    #contact-container #contact #email {
+      top: 3px; }
 
 h2 {
   font-size: 1.25rem;
@@ -259,12 +275,13 @@ li {
 
 #tech-skills-col div:nth-child(1) {
   margin-top: -.5rem; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 922px) {
     #tech-skills-col div:nth-child(1) {
       margin-top: -.25rem; } }
 
 #skills-container .skills h4 {
   margin-top: 1rem;
+  padding-right: .5rem;
   text-transform: uppercase;
   letter-spacing: .0625rem; }
 
@@ -275,12 +292,13 @@ li {
   border-right: none;
   border-bottom: 1px solid #CCCCCC;
   border-left: none; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 922px) {
     .lineBreak {
       display: none; } }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e8e7e5; }
   body a, body a:visited {
     text-decoration: none;
     color: black; }
@@ -292,7 +310,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: .5rem 0;
-  background-color: #7d7d7d; }
+  background-color: #efbdac;
+  /*background-color: rgb(149,183,148);*/ }
   #Nav #nicoleSandry {
     flex: 0 0 auto;
     order: 1;
@@ -305,7 +324,7 @@ body {
     flex: 0 0 auto;
     order: 2;
     display: none; }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 560px) {
       #Nav #desktop-nav {
         display: inline; } }
   #Nav .NavLink {
@@ -328,19 +347,17 @@ body {
     color: black;
     text-align: center;
     padding: .5rem 0; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 560px) {
     #mobile-nav {
       display: none; } }
 
 #mobile-icon {
   flex: 0 0 auto;
   order: 2;
-  color: white;
-  fill: currentColor;
   padding-right: 2rem; }
   #mobile-icon :hover {
     cursor: pointer; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 560px) {
     #mobile-icon {
       display: none; } }
 
@@ -349,7 +366,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 0 2rem 1rem 2rem; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 560px) {
     #footer {
       justify-content: center; }
       #footer a {
