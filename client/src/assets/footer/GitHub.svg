@@ -1,13 +1,9 @@
 <svg id="GitHub" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.01 34.32" width="29" height="29">
   <defs>
     <style>
-      .cls-1 {
-        fill: #000000;
+      #GitHub {
+        fill:rgb(194,170,136);
         fill-rule: evenodd;
-      }
-      .cls-1:hover {
-  			fill: rgb(239,189,172);
-  			fill-rule: evenodd;
       }
     </style>
   </defs>

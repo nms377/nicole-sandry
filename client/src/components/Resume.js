@@ -6,6 +6,8 @@ import GitHub from '../assets/footer/GitHub.svg';
 import LinkedIn from '../assets/footer/LinkedIn.svg';
 import Download from '../assets/Download.svg';
 import PDF from '../assets/Nicole-Sandry-Resume.pdf';
+import '../index.css';
+
 
 const Resume = () => {
 
@@ -13,13 +15,11 @@ const Resume = () => {
 		<div id="Resume">
 		<div id="resume-container">
 			<div id="contact-container">
-				<h1 id="contact-header">Contact</h1>
-				<ol id="contact">
-					<li><a href="mailto:nsandry@gmail.com"><object id="Email" type="image/svg+xml" data={Email}></object>nsandry@gmail.com</a></li>
-					<li><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={GitHub}/>Github.com/nms377</a></li>
-					<li><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={LinkedIn}/>LinkedIn.com/nicolesandry</a></li>
-					<li><a href={PDF} download><object type="image/svg+xml" data={Download} />Download Resume</a></li>
-				</ol>
+				<h2 id="contact-header">Contact</h2>
+					<span className="contact"><a href="mailto:nsandry@gmail.com"><object id="email-icon" type="image/svg+xml" data={Email}></object>nsandry@gmail.com</a></span>
+					<span className="contact"><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={GitHub}/>Github.com/nms377</a></span>
+					<span className="contact"><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={LinkedIn}/>LinkedIn.com/nicolesandry</a></span>
+					<span className="contact"><a href={PDF} download><object type="image/svg+xml" data={Download} />Download Resume</a></span>
 			</div>
 			<hr className="lineBreak"/>
 			<div id="right-container">
@@ -35,7 +35,7 @@ const Resume = () => {
 				</ul>
 			<hr className="lineBreak"/>
 				<h2 id="professional-experience">Professional Experience</h2>
-				<h3 id="executive-assistant" className="position">Office Manager & Social Media Manager</h3>
+				<h3 id="executive-assistant" className="position">Office & Social Media Manager</h3>
 				<h4 id="handcrafted-restaurants-llc" className="company"><a href="http://www.handcraftedrestaurants.com/" target="_blank" rel="noopener noreferrer">Handcrafted Restaurants</a></h4>
 				<h5 id="hi-aug-2013-present" className="duration">Kailua, HI Aug 2013 – Dec 2017</h5>
 				<ul className="responsibilities">
@@ -46,7 +46,7 @@ const Resume = () => {
 					<li>Aided in the launch of two restaurant concepts and two restaurant acquisitions</li>
 				</ul>
 				<h3 id="resident-assistant">Resident Assistant</h3>
-				<h4 id="office-of-residential-life-housing-services-at-new-york-university">Office of Residential Life &amp; Housing Services at New York University</h4>
+				<h4 id="office-of-residential-life-housing-services-at-new-york-university"><a href="https://www.nyu.edu/students/student-information-and-resources/housing-and-dining/on-campus-living/staff.html" target="_blank" rel="noopener noreferrer">Office of Residential Life &amp; Housing Services at New York University</a></h4>
 				<h5 id="ny-aug-2012-may-2013">New York, NY Aug 2012 – May 2013</h5>
 				<ul>
 					<li>Advocated for and represented two floors of 49 students by communicating concerns to supervisors and other building team members</li>
@@ -56,10 +56,10 @@ const Resume = () => {
 			<hr className="lineBreak"/>
 				<h2 id="education">Education</h2>
 				<h3 id="devleague">Fullstack JavaScript Web Engineering</h3>
-				<h5 id="devleague">DevLeague, Nov 2016 - May 2017</h5>
+				<h5 id="devleague"><a href="https://www.devleauge.com/tracks/view/javascript-web-engineer" target="_blank" rel="noopener noreferrer">DevLeague</a>, Nov 2016 - May 2017</h5>
 				<h3 id="bachelor-of-arts-in-interdisciplinary-studies">Bachelor of Arts in Interdisciplinary Studies</h3>
 				<h4 id="communications-with-a-minor-in-social-entrepreneurship">Communications, Minor in Social Entrepreneurship</h4>
-				<h5 id="new-york-university-gallatin-school-of-individualized-study-2011-2013">New York University - Gallatin School of Individualized Study, 2011 – 2013</h5>
+				<h5 id="new-york-university-gallatin-school-of-individualized-study-2011-2013"><a href="https://www.gallatin.nyu.edu" target="_blank" rel="noopener noreferrer">New York University - Gallatin School of Individualized Study</a>, 2011 – 2013</h5>
 			</div>
 			<hr className="lineBreak"/>				
 				<div id="skills-container">
