@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import List from '../assets/list.svg';
 
 class Nav extends Component {
@@ -20,22 +20,28 @@ class Nav extends Component {
 		return (
 			<div id="nav-container">
 				<div id="Nav">
-					<Link to='/' id="nicoleSandry">Nicole Sandry</Link>
+					<NavLink to='/' id="nicoleSandry">Nicole Sandry</NavLink>
 					<div id="desktop-nav">
-						<Link className="NavLink" to='/work'>Work</Link>
-						<Link className="NavLink" to='/resume'>Resume</Link>
-						<Link className="NavLink" to='/about'>About</Link>
+						<NavLink className="NavLink" to='/work' activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)', fontWeight: '600' }}>
+							Work
+						</NavLink>
+						<NavLink className="NavLink" to='/resume' activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)', fontWeight: '600' }}>
+							Resume
+						</NavLink>
+						<NavLink className="NavLink" to='/about' activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)', fontWeight: '600' }}>
+							About
+						</NavLink>
 					</div>
 					<div id="mobile-icon" onClick={() => this.operation()}>
-						<img src={List} alt="Mobile menu list icon" />
+						<img src={List} alt="Mobile Nav Icon"/>
 					</div>
 				</div>
 				{
 					this.state.showMobileMenu?
 					<div id="mobile-nav">
-						<Link className="NavLinkMobile" to='/work' onClick={() => this.operation()}>Work</Link>
-						<Link className="NavLinkMobile" to='/resume' onClick={() => this.operation()}>Resume</Link>
-						<Link className="NavLinkMobile" to='/about' onClick={() => this.operation()}>About</Link>
+						<NavLink className="NavLinkMobile" to='/work' onClick={() => this.operation()}>Work</NavLink>
+						<NavLink className="NavLinkMobile" to='/resume' onClick={() => this.operation()}>Resume</NavLink>
+						<NavLink className="NavLinkMobile" to='/about' onClick={() => this.operation()}>About</NavLink>
 					</div>
 					:null
 				}
