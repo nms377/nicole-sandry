@@ -69,7 +69,7 @@ table {
   display: flex;
   flex-flow: column nowrap;
   padding-bottom: 1.5rem;
-  font-size: .85rem; }
+  font-size: .83rem; }
 
 .work {
   border: 1px solid #ccc;
@@ -99,7 +99,7 @@ table {
     flex: 0 0 auto;
     order: 1;
     font-size: 1.125rem;
-    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
     margin: .5rem 0 .5rem 1rem; }
     @media screen and (min-width: 480px) {
       .work .company {
@@ -108,6 +108,8 @@ table {
     flex: 0 0 auto;
     order: 2;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     margin-bottom: .5rem;
     margin-left: 1rem; }
     @media screen and (min-width: 480px) {
@@ -118,12 +120,18 @@ table {
     order: 3;
     margin-bottom: .625rem;
     line-height: 1rem;
-    padding: 0 1rem; }
+    padding: 0 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; }
   .work .workContributions {
     flex: 0 0 auto;
-    order: 4; }
+    order: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; }
     .work .workContributions .contributions {
       font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
       margin: 0 0 .125rem 1rem; }
       @media screen and (min-width: 480px) {
         .work .workContributions .contributions {
@@ -142,21 +150,13 @@ table {
   flex-flow: column nowrap;
   padding: 1.5rem 0;
   text-align: left;
-  font-size: .83rem; }
+  font-size: .83rem;
+  font-family: 'Montserrat', sans-serif; }
   @media screen and (min-width: 922px) {
     #Resume {
       /*background-color: yellow;*/
       width: 100%;
-      height: auto;
-      font-size: 1rem; }
-      #Resume h2 {
-        font-size: 1.5rem; }
-      #Resume h3 {
-        font-size: 1.25rem; }
-      #Resume h4 {
-        font-size: 1.17rem; }
-      #Resume h5 {
-        font-size: 1rem; } }
+      height: auto; } }
 
 #resume-container {
   flex: 0 0 auto;
@@ -164,17 +164,18 @@ table {
   width: 80%;
   display: flex;
   flex-flow: column nowrap; }
-  @media screen and (min-width: 922px) {
+  #resume-container a:hover {
+    color: #c2aa88; }
+  @media screen and (min-width: 750px) {
     #resume-container {
       /*background-color: powderblue;*/
       flex-flow: column wrap;
-      height: 1080px;
+      height: 1200px;
       width: 85%; }
       #resume-container #contact-container, #resume-container #skills-container, #resume-container #right-container {
         flex: 1;
-        width: 30%; }
+        width: 33%; }
       #resume-container #contact-container {
-        /*background-color: pink;*/
         flex: 0 0 auto;
         order: 1;
         margin: 0;
@@ -183,14 +184,12 @@ table {
         /*padding-bottom: 1rem;*/ }
         #resume-container #contact-container #contact-header {
           text-align: left;
-          margin-left: .75rem;
-          font-size: 1.5rem; } }
-  @media screen and (min-width: 922px) and (min-width: 1225px) {
+          margin-left: .75rem; } }
+  @media screen and (min-width: 750px) and (min-width: 1225px) {
     #resume-container {
       width: 950px; } }
-  @media screen and (min-width: 922px) {
+  @media screen and (min-width: 750px) {
       #resume-container #skills-container {
-        /*background-color: lime;*/
         order: 2;
         align-self: flex-start;
         border-right: 1px solid black; }
@@ -198,10 +197,9 @@ table {
           margin-left: 1rem;
           padding-right: .75rem; }
       #resume-container #right-container {
-        /*background-color: orange;*/
         flex: 0 0 100%;
         order: 3;
-        width: 67%;
+        width: 63%;
         align-self: flex-end; }
         #resume-container #right-container h2:nth-child(1) {
           margin: 0 0 .25rem 0; } }
@@ -210,13 +208,19 @@ table {
   flex: 0 0 auto;
   align-self: center;
   margin: .25rem 0 0 0;
-  width: 14.75rem;
-  font-size: 1rem; }
+  width: 16.375rem; }
   #contact-container #contact-header {
-    font-size: 1.25rem;
+    /*font-size: 1.25rem;*/
     text-align: center;
-    text-transform: uppercase; }
-  #contact-container #contact {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 .25rem 0; }
+  #contact-container .contact {
+    display: block;
+    text-align: left;
+    margin: 0 0 0 .75rem;
+    line-height: 1.5rem;
+    font-weight: 300;
     /*		img {
 			width: 1rem;
 			height: 1rem;
@@ -224,23 +228,17 @@ table {
 			position: relative;
 			top: 2px;
 		}*/ }
-    #contact-container #contact li {
-      list-style-type: none;
-      text-align: left;
-      margin: 0 0 0 .75rem;
-      line-height: 1.5rem; }
-    #contact-container #contact object {
+    #contact-container .contact object {
       width: 1rem;
       height: 1rem;
       padding-right: .375rem;
       position: relative;
       top: 2px; }
-    #contact-container #contact a:hover object {
-      fill: yellow; }
-    #contact-container #contact #email {
+    #contact-container .contact #email-icon {
       top: 3px; }
 
 h2 {
+  font-family: 'Oswald', sans-serif;
   font-size: 1.25rem;
   text-transform: uppercase;
   margin: 1.5rem 0 .25rem 0;
@@ -248,6 +246,7 @@ h2 {
 
 h3 {
   font-size: 1.17rem;
+  font-weight: 500;
   line-height: 1.625rem; }
 
 h4 {
@@ -261,6 +260,7 @@ h5 {
 
 ul, li {
   width: 90%;
+  font-weight: 300;
   list-style-position: outside;
   list-style-type: disc;
   margin-left: 1rem; }
@@ -280,6 +280,8 @@ li {
       margin-top: -.25rem; } }
 
 #skills-container .skills h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   margin-top: 1rem;
   padding-right: .5rem;
   text-transform: uppercase;
@@ -292,12 +294,28 @@ li {
   border-right: none;
   border-bottom: 1px solid #CCCCCC;
   border-left: none; }
-  @media screen and (min-width: 922px) {
+  @media screen and (min-width: 750px) {
     .lineBreak {
       display: none; } }
 
+#About {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+#About-Container {
+  width: 80%;
+  background-color: pink;
+  margin-top: 1.25rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-flow: row wrap; }
+  #About-Container #text {
+    margin-left: 5rem; }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   background-color: #e8e7e5; }
   body a, body a:visited {
     text-decoration: none;
@@ -309,26 +327,31 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 0;
-  background-color: #efbdac;
-  /*background-color: rgb(149,183,148);*/ }
+  padding: 1rem 0;
+  /*background-color: rgb(239,189,172);*/
+  background-color: #c2dacd;
+  /*background-color: rgb(149,183,148);*/
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; }
   #Nav #nicoleSandry {
     flex: 0 0 auto;
     order: 1;
-    font-size: 1.75rem;
-    color: white;
+    font-size: 1.375rem;
+    color: black;
     margin-left: 2rem;
-    letter-spacing: .125rem;
-    text-transform: uppercase; }
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; }
   #Nav #desktop-nav {
     flex: 0 0 auto;
     order: 2;
     display: none; }
-    @media screen and (min-width: 560px) {
+    @media screen and (min-width: 750px) {
       #Nav #desktop-nav {
-        display: inline; } }
+        display: inline;
+        align-self: flex-end; } }
   #Nav .NavLink {
-    color: white;
+    color: black;
     padding-right: 2rem; }
 
 #mobile-nav {
@@ -340,14 +363,14 @@ body {
   margin: 0;
   background-color: white;
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   z-index: 1; }
   #mobile-nav .NavLinkMobile {
     flex: 0 0 auto;
     color: black;
     text-align: center;
     padding: .5rem 0; }
-  @media screen and (min-width: 560px) {
+  @media screen and (min-width: 750px) {
     #mobile-nav {
       display: none; } }
 
@@ -357,7 +380,7 @@ body {
   padding-right: 2rem; }
   #mobile-icon :hover {
     cursor: pointer; }
-  @media screen and (min-width: 560px) {
+  @media screen and (min-width: 750px) {
     #mobile-icon {
       display: none; } }
 
@@ -365,9 +388,13 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 0 2rem 1rem 2rem; }
+  margin: 0 2rem 1rem 2rem; }
+  #footer a.svg {
+    display: inline-block; }
+  #footer .email-icon {
+    fill: red; }
   @media screen and (min-width: 560px) {
     #footer {
       justify-content: center; }
       #footer a {
-        padding: 0 1rem; } }
+        margin: 0 1rem; } }

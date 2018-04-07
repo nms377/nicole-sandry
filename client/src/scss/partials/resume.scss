@@ -4,28 +4,12 @@
 	padding: 1.5rem 0;
 	text-align: left;
 	font-size: .83rem;
+	font-family: 'Montserrat', sans-serif;
 
 	@media screen and (min-width: 922px) {
 		/*background-color: yellow;*/
 		width: 100%;
 		height: auto;
-		font-size: 1rem;
-
-		h2 {
-			font-size: 1.5rem;
-		}
-
-		h3 {
-			font-size: 1.25rem;
-		}
-
-		h4 {
-			font-size: 1.17rem;
-		}
-
-		h5 {
-			font-size: 1rem;
-		}
 	}
 }
 
@@ -37,21 +21,25 @@
 	display: flex;
 	flex-flow: column nowrap;
 
-	@media screen and (min-width: 922px) {
+	a:hover {
+		color: rgb(194,170,136);
+	}
+
+	@media screen and (min-width: 750px) {
 		/*background-color: powderblue;*/
 		flex-flow: column wrap;
 		// must set height to stack elements
-		height: 1080px;
+		height: 1200px;
 		width: 85%;
 
 		// must set this to stack elements
 		#contact-container, #skills-container, #right-container {
 			flex: 1;
-			width: 30%;
+			width: 33%;
 		}
 
 		#contact-container {
-			/*background-color: pink;*/
+			//background-color: pink;
 			flex: 0 0 auto;
 			order: 1;
 			margin: 0;
@@ -62,7 +50,6 @@
 			#contact-header {
 				text-align: left;
 				margin-left: .75rem;
-				font-size: 1.5rem;
 			}
 		}
 
@@ -71,7 +58,7 @@
 		}
 
 		#skills-container {
-			/*background-color: lime;*/
+			//background-color: lime;
 			order: 2;
 			align-self: flex-start;
 			border-right: 1px solid black;
@@ -83,10 +70,10 @@
 		}
 
 		#right-container {
-			/*background-color: orange;*/
+			//background-color: orange;
 			flex: 0 0 100%;
 			order: 3;
-			width: 67%;
+			width: 63%;
 			align-self: flex-end;
 			
 			h2:nth-child(1) {
@@ -102,22 +89,24 @@
 	flex: 0 0 auto;
 	align-self: center;
 	margin: .25rem 0 0 0;
-	width: 14.75rem;
-	font-size: 1rem;
+	width: 16.375rem;
+	//font-size: 1rem;
 
 	#contact-header {
-		font-size: 1.25rem;
+		/*font-size: 1.25rem;*/
 		text-align: center;
 		text-transform: uppercase;
+		font-family: 'Oswald', sans-serif;
+		margin: 0 0 .25rem 0;
+
 	}
 
-	#contact {
-		li {
-			list-style-type: none;
+	.contact {
+			display: block;
 			text-align: left;
 			margin: 0 0 0 .75rem;
 			line-height: 1.5rem;
-		}
+			font-weight: 300;
 
 		// contact icons
 /*		img {
@@ -135,15 +124,9 @@
 			position: relative;
 			top: 2px;
 		}
-
-		a:hover {
-			object {
-				fill: yellow;
-			}
-		}
-
+		
 		// adjust email icon to align with text
-		#email {
+		#email-icon {
 			top: 3px;
 		}
 	}
@@ -151,6 +134,7 @@
 
 // Section Headers
 h2 {
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.25rem;
 	text-transform: uppercase;
 	margin: 1.5rem 0 .25rem 0;
@@ -160,6 +144,7 @@ h2 {
 // Position & School
 h3 {
 	font-size: 1.17rem;
+	font-weight: 500;
 	line-height: 1.625rem;
 }
 
@@ -179,6 +164,7 @@ h5 {
 // Responsibilities
 ul, li {
 			width: 90%;
+			font-weight: 300;
 			list-style-position: outside;
 			list-style-type: disc;
 			margin-left: 1rem;
@@ -208,6 +194,8 @@ li {
 #skills-container {
 	.skills {
 		h4 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
 			margin-top: 1rem;
 			padding-right: .5rem;
 			text-transform: uppercase;
@@ -224,7 +212,7 @@ li {
 	border-bottom: 1px solid #CCCCCC;
 	border-left: none;
 
-	@media screen and (min-width: 922px) {
+	@media screen and (min-width: 750px) {
 		display: none;
 	}
 }

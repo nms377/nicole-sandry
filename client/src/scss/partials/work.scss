@@ -3,7 +3,7 @@
 	display: flex;
 	flex-flow: column nowrap;
 	padding-bottom: 1.5rem;
-	font-size: .85rem;
+	font-size: .83rem;
 }
 
 .work {
@@ -42,7 +42,7 @@
 		flex: 0 0 auto;
 		order: 1;
 		font-size: 1.125rem;
-		font-weight: bold;
+		font-family: 'Oswald', sans-serif;
 		margin: .5rem 0 .5rem 1rem;
 
 		@media screen and (min-width: 480px) {
@@ -54,6 +54,8 @@
 		flex: 0 0 auto;
 		order: 2;
 		font-size: 1rem;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
 		margin-bottom: .5rem;
 		margin-left: 1rem;
 
@@ -68,14 +70,20 @@
 		margin-bottom: .625rem;
 		line-height: 1rem;
 		padding: 0 1rem;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
 	}
 
 	.workContributions {
 		flex: 0 0 auto;
 		order: 4;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
 
 		.contributions {
 			font-size: 1rem;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
 			margin: 0 0 .125rem 1rem;
 
 			@media screen and (min-width: 480px) {
