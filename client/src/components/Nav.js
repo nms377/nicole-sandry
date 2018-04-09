@@ -20,7 +20,9 @@ class Nav extends Component {
 		return (
 			<div id="nav-container">
 				<div id="Nav">
-					<NavLink to='/' id="nicoleSandry">Nicole Sandry</NavLink>
+					<NavLink id="nicoleSandry" exact to='/' activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)'}}>
+						Nicole Sandry
+					</NavLink>
 					<div id="desktop-nav">
 						<NavLink className="NavLink" to='/work' activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)', fontWeight: '600' }}>
 							Work
