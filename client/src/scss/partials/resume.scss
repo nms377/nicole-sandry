@@ -22,7 +22,9 @@
 	flex-flow: column nowrap;
 
 	a:hover {
-		color: rgb(194,170,136);
+		text-decoration: underline;
+		text-decoration-color: rgb(128,128,128);
+		/*color: rgb(194,170,136);*/
 	}
 
 	@media screen and (min-width: 750px) {
