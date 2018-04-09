@@ -80,6 +80,7 @@ table {
   padding-bottom: .75rem;
   text-align: left;
   background-color: white;
+  box-shadow: 0 1px 1px #ccc;
   display: flex;
   flex-flow: column wrap; }
   @media screen and (min-width: 480px) {
