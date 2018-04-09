@@ -72,7 +72,7 @@ table {
   font-size: .83rem; }
 
 .work {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   flex: 0 0 auto;
   width: 80%;
   align-self: center;
@@ -80,10 +80,10 @@ table {
   padding-bottom: .75rem;
   text-align: left;
   background-color: white;
-  box-shadow: 0 1px 1px #ccc;
+  box-shadow: 0 4px .5rem #ccc;
   display: flex;
   flex-flow: column wrap; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 750px) {
     .work {
       max-width: 800px; } }
   .work .workImg {
@@ -95,14 +95,20 @@ table {
     object-position: 50% top; }
     @media screen and (min-width: 480px) {
       .work .workImg {
-        height: 480px; } }
+        height: 320px; } }
+    @media screen and (min-width: 615px) {
+      .work .workImg {
+        height: 440px; } }
+    @media screen and (min-width: 750px) {
+      .work .workImg {
+        height: 560px; } }
   .work .company {
     flex: 0 0 auto;
     order: 1;
     font-size: 1.125rem;
     font-family: 'Oswald', sans-serif;
     margin: .5rem 0 .5rem 1rem; }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 750px) {
       .work .company {
         font-size: 1.5rem; } }
   .work .position {
@@ -113,7 +119,7 @@ table {
     font-weight: 500;
     margin-bottom: .5rem;
     margin-left: 1rem; }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 750px) {
       .work .position {
         font-size: 1.125rem; } }
   .work .description {
@@ -134,7 +140,7 @@ table {
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       margin: 0 0 .125rem 1rem; }
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 750px) {
         .work .workContributions .contributions {
           font-size: 1.125rem; } }
     .work .workContributions ul, .work .workContributions li {
@@ -166,7 +172,9 @@ table {
   display: flex;
   flex-flow: column nowrap; }
   #resume-container a:hover {
-    color: #c2aa88; }
+    text-decoration: underline;
+    text-decoration-color: gray;
+    /*color: rgb(194,170,136);*/ }
   @media screen and (min-width: 750px) {
     #resume-container {
       /*background-color: powderblue;*/
