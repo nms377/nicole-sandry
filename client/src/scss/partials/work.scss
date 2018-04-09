@@ -7,7 +7,7 @@
 }
 
 .work {
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	// style for container
 	flex: 0 0 auto;
 	width: 80%;
@@ -16,9 +16,9 @@
 	padding-bottom: .75rem;
 	text-align: left;
 	background-color: rgb(255,255,255);
-	box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 4px .5rem #ccc;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: 750px) {
 		max-width: 800px;
 	}
 
@@ -35,7 +35,15 @@
 		object-position: 50% top;
 
 		@media screen and (min-width: 480px) {
-			height: 480px;
+			height: 320px;
+		}
+
+		@media screen and (min-width: 615px){
+			height: 440px;
+		}
+
+		@media screen and (min-width: 750px) {
+			height: 560px;
 		}
 	}
 
@@ -46,7 +54,7 @@
 		font-family: 'Oswald', sans-serif;
 		margin: .5rem 0 .5rem 1rem;
 
-		@media screen and (min-width: 480px) {
+		@media screen and (min-width: 750px) {
 			font-size: 1.5rem;
 		}
 	}
@@ -60,7 +68,7 @@
 		margin-bottom: .5rem;
 		margin-left: 1rem;
 
-		@media screen and (min-width: 480px) {
+		@media screen and (min-width: 750px) {
 			font-size: 1.125rem;
 		}
 	}
@@ -87,7 +95,7 @@
 			font-weight: 500;
 			margin: 0 0 .125rem 1rem;
 
-			@media screen and (min-width: 480px) {
+			@media screen and (min-width: 750px) {
 				font-size: 1.125rem;
 			}
 		}
