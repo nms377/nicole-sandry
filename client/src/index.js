@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import About from './components/About';
 import Work from './components/Work';
 import Resume from './components/Resume';
