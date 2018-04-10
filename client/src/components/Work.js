@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 const HeleIo = require('../assets/heleio.png');
 const Leiover = require('../assets/leiover.png');
 const Kanban = require('../assets/react-kanban.png');
 const Instafeed = require('../assets/react-insta.png');
 
 
-const Work = () => {
+const Developer = () => (
 
-	return(
 		<div id="workContainer">
 			<div className="work">
 				<a href="https://hele.io/" target="_blank" rel="noopener noreferrer"><img className="workImg" src={ HeleIo } alt="Hele.io homepage"/></a>
@@ -65,7 +64,71 @@ const Work = () => {
 				</div>
 			</div>
 		</div>
-	)
-}
+)
+
+const Photos = ({ routes }) => (
+	<div>
+		<ul>
+			<li>
+				<NavLink to="/photos/people">People</NavLink>
+			</li>
+			<li>
+				<NavLink to="/photos/food">Food</NavLink>
+			</li>
+		</ul>
+
+		{ routes.map((route,i) => <RouteWithSubRoutes key={i} {...route} />)}
+	</div>
+);
+
+const People = <h3>People</h3>;
+const Food = <h3>Food</h3>;
+
+const routes = [
+	{
+		path: "/work/developer",
+		component: Developer	
+	},
+	{
+		path: "/work/photos",
+		component: Photos,
+		routes: [
+			{
+				path: "/photos/people",
+				component: People
+			},
+			{
+				path: "/photos/food",
+				component: Food
+			}
+		]
+	}
+];
+
+const RouteWithSubRoutes = route => (
+	<Route
+		path={route.path}
+		render={props => (
+			<route.component {...props} routes={route.routes} />
+		)}
+	/>
+);
+
+const Work = () => (
+	<Router>
+		<div>
+			<ul>
+				<li>
+					<NavLink to="/work/developer">Web Design</NavLink>
+				</li>
+				<li>
+					<NavLink to="/work/photos">Photography</NavLink>
+				</li>
+			</ul>
+
+			{ routes.map((route,i) => <RouteWithSubRoutes key={i} {...route} />)}
+		</div>
+	</Router>
+)
 
 export default Work;
