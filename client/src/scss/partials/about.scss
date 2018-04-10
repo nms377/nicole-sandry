@@ -11,9 +11,29 @@
 	padding-bottom: 1.5rem;
 
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 
-	#text{
-		margin-left: 5rem;
+	img {
+		align-self: center;
+	}
+
+	#text {
+		margin-top: 1.25rem;
+		text-align: center;
+		line-height: 1.25rem;
+		font-size: .83rem;
+
+		p:first-child {
+			margin-top: 0;
+		}
+
+		p {
+			margin-top: 1.25rem;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			text-decoration-color: rgb(128,128,128);
+		}
 	}
 }
