@@ -2,19 +2,38 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	width: 100%;
 }
 
 #About-Container {
 	width: 80%;
-	background-color: pink;
 	margin-top: 1.25rem;
 	padding-bottom: 1.5rem;
 
 	display: flex;
 	flex-flow: column wrap;
 
+	@media screen and (min-width: 866px) {
+		flex-flow: row nowrap;
+		width: 85%;
+	}
+
+	// set max width
+	@media screen and (min-width: 1225px){
+		width: 950px;
+	}
+
 	img {
 		align-self: center;
+
+		@media screen and (max-width: 480px) {
+			width: 100%;
+			height: auto;
+		}
+
+		@media screen and (min-width: 866px) {
+			align-self: flex-start;
+		}
 	}
 
 	#text {
@@ -22,6 +41,12 @@
 		text-align: center;
 		line-height: 1.25rem;
 		font-size: .83rem;
+		text-align: justify;
+
+		@media screen and (min-width: 866px){
+			text-align: justify;
+			margin: 0 0 0 4rem;
+		}
 
 		p:first-child {
 			margin-top: 0;

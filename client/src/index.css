@@ -154,14 +154,15 @@ table {
 
 #Resume {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  justify-content: center;
   padding: 1.5rem 0;
   text-align: left;
   font-size: .83rem;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  width: 100%; }
   @media screen and (min-width: 922px) {
     #Resume {
-      /*background-color: yellow;*/
       width: 100%;
       height: auto; } }
 
@@ -173,13 +174,12 @@ table {
   flex-flow: column nowrap; }
   #resume-container a:hover {
     text-decoration: underline;
-    text-decoration-color: gray;
-    /*color: rgb(194,170,136);*/ }
+    text-decoration-color: gray; }
   @media screen and (min-width: 750px) {
     #resume-container {
       /*background-color: powderblue;*/
       flex-flow: column wrap;
-      height: 1200px;
+      height: 1215px;
       width: 85%; }
       #resume-container #contact-container, #resume-container #skills-container, #resume-container #right-container {
         flex: 1;
@@ -193,11 +193,7 @@ table {
         /*padding-bottom: 1rem;*/ }
         #resume-container #contact-container #contact-header {
           text-align: left;
-          margin-left: .75rem; } }
-  @media screen and (min-width: 750px) and (min-width: 1225px) {
-    #resume-container {
-      width: 950px; } }
-  @media screen and (min-width: 750px) {
+          margin-left: .75rem; }
       #resume-container #skills-container {
         order: 2;
         align-self: flex-start;
@@ -212,6 +208,34 @@ table {
         align-self: flex-end; }
         #resume-container #right-container h2:nth-child(1) {
           margin: 0 0 .25rem 0; } }
+  @media screen and (min-width: 766px) and (max-width: 800px) {
+    #resume-container {
+      height: 1170px; } }
+  @media screen and (min-width: 801px) and (max-width: 830px) {
+    #resume-container {
+      height: 1150px; } }
+  @media screen and (min-width: 831px) and (max-width: 880px) {
+    #resume-container {
+      height: 1130px; } }
+  @media screen and (min-width: 881px) and (max-width: 890px) {
+    #resume-container {
+      height: 1100px; } }
+  @media screen and (min-width: 891px) and (max-width: 998px) {
+    #resume-container {
+      height: 1060px; } }
+  @media screen and (min-width: 999px) and (max-width: 1080px) {
+    #resume-container {
+      height: 1000px; } }
+  @media screen and (min-width: 1081px) and (max-width: 1150px) {
+    #resume-container {
+      height: 990px; } }
+  @media screen and (min-width: 1151px) and (max-width: 1224px) {
+    #resume-container {
+      height: 980px; } }
+  @media screen and (min-width: 1225px) {
+    #resume-container {
+      width: 950px;
+      height: 970px; } }
 
 #contact-container {
   flex: 0 0 auto;
@@ -310,22 +334,41 @@ li {
 #About {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
 
 #About-Container {
   width: 80%;
-  background-color: pink;
   margin-top: 1.25rem;
   padding-bottom: 1.5rem;
   display: flex;
   flex-flow: column wrap; }
+  @media screen and (min-width: 866px) {
+    #About-Container {
+      flex-flow: row nowrap;
+      width: 85%; } }
+  @media screen and (min-width: 1225px) {
+    #About-Container {
+      width: 950px; } }
   #About-Container img {
     align-self: center; }
+    @media screen and (max-width: 480px) {
+      #About-Container img {
+        width: 100%;
+        height: auto; } }
+    @media screen and (min-width: 866px) {
+      #About-Container img {
+        align-self: flex-start; } }
   #About-Container #text {
     margin-top: 1.25rem;
     text-align: center;
     line-height: 1.25rem;
-    font-size: .83rem; }
+    font-size: .83rem;
+    text-align: justify; }
+    @media screen and (min-width: 866px) {
+      #About-Container #text {
+        text-align: justify;
+        margin: 0 0 0 4rem; } }
     #About-Container #text p:first-child {
       margin-top: 0; }
     #About-Container #text p {
