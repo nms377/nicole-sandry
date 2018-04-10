@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Portrait from '../assets/_RI_5176.jpg';
 
 class About extends Component {
