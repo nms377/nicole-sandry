@@ -22,6 +22,7 @@ ReactDOM.render(
 			<Route path='/work' component={ Work } />
 			<Route path='/resume' component={ Resume } />
 			<Route path='/about' component={ About } />
+			<Route path='/work/developer' component={ Developer } />
 			<Route path='/work/photos' component={ Photos } />
 		  <Footer />
 	  </div>
