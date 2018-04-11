@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+
+// Mobile Menu Icon
 import List from '../assets/list.svg';
 
 class Nav extends Component {
@@ -11,11 +13,12 @@ class Nav extends Component {
 	}
 
 	// Toggle to show and hide mobile menu
-	operation(){
+	toggle(){
 		this.setState({
-			showMobileMenu: !this.state.showMobileMenu
+			showMobileMenu: !this.state.showMobileMenu,
 		});
 	}
+
 	render() {
 		return (
 			<div id="nav-container">
@@ -24,7 +27,7 @@ class Nav extends Component {
 						Nicole Sandry
 					</NavLink>
 					<div id="desktop-nav">
-						<NavLink className="NavLink" to='/work' activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)', fontWeight: '600' }}>
+						<NavLink className="NavLink" to='/work' onClick={() => this.devComponent()} activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)', fontWeight: '600' }}>
 							Work
 						</NavLink>
 						<NavLink className="NavLink" to='/resume' activeStyle={{ textDecoration: 'underline', textDecorationColor: 'rgb(255,255,255)', fontWeight: '600' }}>
@@ -34,16 +37,16 @@ class Nav extends Component {
 							About
 						</NavLink>
 					</div>
-					<div id="mobile-icon" onClick={() => this.operation()}>
+					<div id="mobile-icon" onClick={() => this.toggle()}>
 						<img src={List} alt="Mobile Nav Icon"/>
 					</div>
 				</div>
 				{
 					this.state.showMobileMenu?
 					<div id="mobile-nav">
-						<NavLink className="NavLinkMobile" to='/work' onClick={() => this.operation()}>Work</NavLink>
-						<NavLink className="NavLinkMobile" to='/resume' onClick={() => this.operation()}>Resume</NavLink>
-						<NavLink className="NavLinkMobile" to='/about' onClick={() => this.operation()}>About</NavLink>
+						<NavLink className="NavLinkMobile" to='/work' onClick={() => this.toggle()}>Work</NavLink>
+						<NavLink className="NavLinkMobile" to='/resume' onClick={() => this.toggle()}>Resume</NavLink>
+						<NavLink className="NavLinkMobile" to='/about' onClick={() => this.toggle()}>About</NavLink>
 					</div>
 					:null
 				}
