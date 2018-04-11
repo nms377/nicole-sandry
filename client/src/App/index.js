@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import Work from '../components/Work.js';
+import Developer from '../components/Developer.js';
 
 class App extends Component {
   render() {
     return (
-    	<Work />
+    	<Developer />
     );
   }
 }
