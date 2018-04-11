@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
+import Developer from './Developer';
+
 const Work = ({ match }) => (
   <div>
     <ul>
@@ -15,7 +17,7 @@ const Work = ({ match }) => (
     <Route
       exact
       path={match.url}
-      render={() => <h3>Please select a topic.</h3>}
+      render={() => <Developer />}
     />
   </div>
 );
