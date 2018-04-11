@@ -10,8 +10,7 @@ class Nav extends Component {
 	constructor(props){
 		super(props);
 			this.state = {
-				showMobileMenu: false,
-				showWorkMenu: false
+				showMobileMenu: false
 			};
 	}
 
