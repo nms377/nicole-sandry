@@ -253,15 +253,8 @@ table {
     text-align: left;
     margin: 0 0 0 .75rem;
     line-height: 1.5rem;
-    font-weight: 300;
-    /*		img {
-			width: 1rem;
-			height: 1rem;
-			padding-right: .375rem;
-			position: relative;
-			top: 2px;
-		}*/ }
-    #contact-container .contact object {
+    font-weight: 300; }
+    #contact-container .contact img {
       width: 1rem;
       height: 1rem;
       padding-right: .375rem;
