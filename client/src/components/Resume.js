@@ -16,10 +16,10 @@ const Resume = () => {
 		<div id="resume-container">
 			<div id="contact-container">
 				<h2 id="contact-header">Contact</h2>
-					<span className="contact"><a href="mailto:nsandry@gmail.com"><object id="email-icon" type="image/svg+xml" data={Email}></object>nsandry@gmail.com</a></span>
-					<span className="contact"><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={GitHub}/>Github.com/nms377</a></span>
-					<span className="contact"><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><object type="image/svg+xml" data={LinkedIn}/>LinkedIn.com/nicolesandry</a></span>
-					<span className="contact"><a href={PDF} download><object type="image/svg+xml" data={Download} />Download Resume</a></span>
+					<span className="contact"><a href="mailto:nsandry@gmail.com"><img id="email-icon" src={Email} alt="Email Nicole at nsandry@gmail.com" />nsandry@gmail.com</a></span>
+					<span className="contact"><a href="https://github.com/nms377" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="Visit Nicole's Github Profile"/>Github.com/nms377</a></span>
+					<span className="contact"><a href="https://www.linkedin.com/in/nicolesandry" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="Visit Nicole's LinkedIn Profile"/>LinkedIn.com/nicolesandry</a></span>
+					<span className="contact"><a href={PDF} download><img src={Download} alt="Download a PDF copy of Nicole's resume"/>Download Resume</a></span>
 			</div>
 			<hr className="lineBreak"/>
 			<div id="right-container">
