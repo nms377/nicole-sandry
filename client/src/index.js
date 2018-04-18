@@ -10,12 +10,12 @@ import Footer from './components/Footer';
 import './index.css';
 
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Route
 } from 'react-router-dom';
 
 ReactDOM.render(
-	<Router basename={process.env.PUBLIC_URL}>
+	<Router>
 		<div>
 			<Nav />
 			<Route exact path='/' component={ Developer } />
