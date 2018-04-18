@@ -15,7 +15,7 @@ import {
 } from 'react-router-dom';
 
 ReactDOM.render(
-	<Router>
+	<Router basename={process.env.PUBLIC_URL}>
 		<div>
 			<Nav />
 			<Route exact path='/' component={ Developer } />
