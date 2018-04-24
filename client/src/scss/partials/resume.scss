@@ -129,8 +129,6 @@
 
 	#contact-header {
 		text-align: center;
-		text-transform: uppercase;
-		font-family: "Oswald", sans-serif;
 		margin: 0 0 0.25rem 0;
 	}
 
@@ -158,7 +156,11 @@
 }
 
 // Section Headers
-h2 {
+#development-experience,
+#professional-experience,
+#education,
+#technical-skills,
+#contact-header {
 	font-family: "Oswald", sans-serif;
 	font-size: 1.25rem;
 	text-transform: uppercase;
@@ -166,37 +168,57 @@ h2 {
 	letter-spacing: 0.075rem;
 }
 
-// Position & School
-h3 {
+// Position & Degree
+#hele,
+#office-social-media-manager,
+#resident-assistant,
+#fullstack-javascript-web-engineering,
+#bachelor-of-arts-in-interdisciplinary-studies {
 	font-size: 1.17rem;
 	font-weight: 500;
 	line-height: 1.625rem;
 }
 
 // Company
-h4 {
+#-hele-io-https-hele-io-,
+#handcrafted-restaurants-llc,
+#office-of-residential-life-housing-services-at-new-york-university,
+#communications-with-a-minor-in-social-entrepreneurship,
+#languages,
+#frontend,
+#server-side,
+#database,
+#web-skills,
+#business-development {
 	font-size: 1rem;
 	line-height: 1.25rem;
 }
 
-// Dates
-h5 {
+// Dates & School
+#may-2017,
+#hi-aug-2013-dec-2017,
+#ny-aug-2012-may-2013,
+#devleague,
+#new-york-university-gallatin-school-of-individualized-study-2011-2013 {
 	font-size: 0.83rem;
 	margin: 0 0 0.125rem 0;
 	line-height: 1.25rem;
 }
 
 // Responsibilities
-ul,
-li {
+
+.responsibilities {
 	width: 90%;
-	font-weight: 300;
-	list-style-position: outside;
-	list-style-type: disc;
-	margin-left: 1rem;
+
+	li {
+		font-weight: 300;
+		list-style-position: outside;
+		list-style-type: disc;
+		margin-left: 1rem;
+	}
 }
 
-li {
+#resp-skills {
 	text-align: left;
 	line-height: 1.25rem;
 	margin-bottom: 0.25rem;

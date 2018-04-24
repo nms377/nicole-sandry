@@ -65,21 +65,21 @@ const Resume = () => {
 							Hele.io
 						</a>
 					</h4>
-					<h5 id="may-2017" className="duration">
+					<h5 id="may-2017">
 						Honolulu, HI May 2017
 					</h5>
 					<ul className="responsibilities">
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Created a web-based application generating a personal travel
 							itinerary by the most affordable price
 						</li>
-						<li>Created backend database with PostgreSQL and Sequelize ORM</li>
-						<li>Designed the User Interface with React, SASS, and Gulp</li>
-						<li>Designed the logo</li>
+						<li className="responsibilities" id="resp-skills">Created backend database with PostgreSQL and Sequelize ORM</li>
+						<li className="responsibilities" id="resp-skills">Designed the User Interface with React, SASS, and Gulp</li>
+						<li className="responsibilities" id="resp-skills">Designed the logo</li>
 					</ul>
 					<hr className="lineBreak" />
 					<h2 id="professional-experience">Professional Experience</h2>
-					<h3 id="executive-assistant" className="position">
+					<h3 id="office-social-media-manager" className="position">
 						Office & Social Media Manager
 					</h3>
 					<h4 id="handcrafted-restaurants-llc" className="company">
@@ -91,27 +91,27 @@ const Resume = () => {
 							Handcrafted Restaurants
 						</a>
 					</h4>
-					<h5 id="hi-aug-2013-present" className="duration">
+					<h5 id="hi-aug-2013-dec-2017">
 						Kailua, HI Aug 2013 – Dec 2017
 					</h5>
 					<ul className="responsibilities">
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Coordinated with third party developers and designers to maintain
 							company websites and storefronts
 						</li>
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Managed online reputation & marketing while building a following
 							of 5,000+ on Instagram and 12,000+ on Facebook
 						</li>
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Designed print collateral, menus, magazine ads, banners, posters,
 							signage, and photography
 						</li>
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Established menu editing protocols to maintain brand and product
 							consistency across three restaurant concepts
 						</li>
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Aided in the launch of two restaurant concepts and two restaurant
 							acquisitions
 						</li>
@@ -128,18 +128,18 @@ const Resume = () => {
 						</a>
 					</h4>
 					<h5 id="ny-aug-2012-may-2013">New York, NY Aug 2012 – May 2013</h5>
-					<ul>
-						<li>
+					<ul className="responsibilities">
+						<li className="responsibilities" id="resp-skills">
 							Advocated for and represented two floors of 49 students by
 							communicating concerns to supervisors and other building team
 							members
 						</li>
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Collaborated with a student staff of 16 and 3 professional staff
 							members on programs and administrative responsibilities to foster
 							a positive living and learning community
 						</li>
-						<li>
+						<li className="responsibilities" id="resp-skills">
 							Received intensive training and professional development in
 							leadership, mediation, and communication with students and
 							families
@@ -147,7 +147,7 @@ const Resume = () => {
 					</ul>
 					<hr className="lineBreak" />
 					<h2 id="education">Education</h2>
-					<h3 id="devleague">Fullstack JavaScript Web Engineering</h3>
+					<h3 id="fullstack-javascript-web-engineering">Fullstack JavaScript Web Engineering</h3>
 					<h5 id="devleague">
 						<a
 							href="https://www.devleauge.com/tracks/view/javascript-web-engineer"
@@ -196,19 +196,19 @@ const Resume = () => {
 						<div className="skills">
 							<h4 id="web-skills">Web Skills</h4>
 							<ul>
-								<li>Responsive/Mobile First Web Development</li>
-								<li>TDD/BDD</li>
-								<li>RDBMS/NoSQL</li>
-								<li>User Auth</li>
-								<li>API Integration</li>
+								<li id="resp-skills">Responsive/Mobile First Web Development</li>
+								<li id="resp-skills">TDD/BDD</li>
+								<li id="resp-skills">RDBMS/NoSQL</li>
+								<li id="resp-skills">User Auth</li>
+								<li id="resp-skills">API Integration</li>
 							</ul>
 						</div>
 						<div className="skills">
 							<h4 id="business-development">Business Development</h4>
 							<ul>
-								<li>Adobe InDesign CC</li>
-								<li>Adobe Photoshop CC</li>
-								<li>Adobe Illustrator CC</li>
+								<li id="resp-skills">Adobe InDesign CC</li>
+								<li id="resp-skills">Adobe Photoshop CC</li>
+								<li id="resp-skills">Adobe Illustrator CC</li>
 							</ul>
 						</div>
 					</div>
