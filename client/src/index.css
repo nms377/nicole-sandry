@@ -2,19 +2,88 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, #root {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+#root {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,22 +92,35 @@ time, mark, audio, video, #root {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -65,22 +147,20 @@ table {
 
 /* close commented backslash hack */
 #workContainer {
-  /*border: 2px dotted black;*/
   display: flex;
   flex-flow: column nowrap;
   padding-bottom: 1.5rem;
-  font-size: .83rem; }
+  font-size: 0.83rem; }
 
 .work {
-  /*border: 1px solid #ccc;*/
   flex: 0 0 auto;
   width: 80%;
   align-self: center;
   margin-top: 1.25rem;
-  padding-bottom: .75rem;
+  padding-bottom: 0.75rem;
   text-align: left;
   background-color: white;
-  box-shadow: 0 4px .5rem #ccc;
+  box-shadow: 0 4px 0.5rem #ccc;
   display: flex;
   flex-flow: column wrap; }
   @media screen and (min-width: 750px) {
@@ -106,8 +186,8 @@ table {
     flex: 0 0 auto;
     order: 1;
     font-size: 1.125rem;
-    font-family: 'Oswald', sans-serif;
-    margin: .5rem 0 .5rem 1rem; }
+    font-family: "Oswald", sans-serif;
+    margin: 0.5rem 0 0.5rem 1rem; }
     @media screen and (min-width: 750px) {
       .work .company {
         font-size: 1.5rem; } }
@@ -115,9 +195,9 @@ table {
     flex: 0 0 auto;
     order: 2;
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     margin-left: 1rem; }
     @media screen and (min-width: 750px) {
       .work .position {
@@ -125,31 +205,32 @@ table {
   .work .description {
     flex: 0 0 auto;
     order: 3;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
     line-height: 1rem;
     padding: 0 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300; }
   .work .workContributions {
     flex: 0 0 auto;
     order: 4;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300; }
     .work .workContributions .contributions {
       font-size: 1rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 500;
-      margin: 0 0 .125rem 1rem; }
+      margin: 0 0 0.125rem 1rem; }
       @media screen and (min-width: 750px) {
         .work .workContributions .contributions {
           font-size: 1.125rem; } }
-    .work .workContributions ul, .work .workContributions li {
+    .work .workContributions ul,
+    .work .workContributions li {
       width: 90%;
       text-align: left;
       list-style-position: outside;
       list-style-type: disc;
       margin-left: 1.5rem;
-      margin-bottom: .25rem;
+      margin-bottom: 0.25rem;
       line-height: 1.25rem; }
 
 #Resume {
@@ -158,8 +239,8 @@ table {
   justify-content: center;
   padding: 1.5rem 0;
   text-align: left;
-  font-size: .83rem;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 0.83rem;
+  font-family: "Montserrat", sans-serif;
   width: 100%; }
   @media screen and (min-width: 922px) {
     #Resume {
@@ -177,11 +258,12 @@ table {
     text-decoration-color: gray; }
   @media screen and (min-width: 750px) {
     #resume-container {
-      /*background-color: powderblue;*/
       flex-flow: column wrap;
       height: 1215px;
       width: 85%; }
-      #resume-container #contact-container, #resume-container #skills-container, #resume-container #right-container {
+      #resume-container #contact-container,
+      #resume-container #skills-container,
+      #resume-container #right-container {
         flex: 1;
         width: 33%; }
       #resume-container #contact-container {
@@ -189,25 +271,25 @@ table {
         order: 1;
         margin: 0;
         align-self: flex-start;
-        border-right: 1px solid black;
-        /*padding-bottom: 1rem;*/ }
+        border-right: 1px solid black; }
         #resume-container #contact-container #contact-header {
           text-align: left;
-          margin-left: .75rem; }
+          margin-left: 0.75rem; }
       #resume-container #skills-container {
         order: 2;
         align-self: flex-start;
         border-right: 1px solid black; }
-        #resume-container #skills-container .skills, #resume-container #skills-container h2 {
+        #resume-container #skills-container .skills,
+        #resume-container #skills-container h2 {
           margin-left: 1rem;
-          padding-right: .75rem; }
+          padding-right: 0.75rem; }
       #resume-container #right-container {
         flex: 0 0 100%;
         order: 3;
         width: 63%;
         align-self: flex-end; }
         #resume-container #right-container h2:nth-child(1) {
-          margin: 0 0 .25rem 0; } }
+          margin: 0 0 0.25rem 0; } }
   @media screen and (min-width: 766px) and (max-width: 800px) {
     #resume-container {
       height: 1170px; } }
@@ -240,35 +322,34 @@ table {
 #contact-container {
   flex: 0 0 auto;
   align-self: center;
-  margin: .25rem 0 0 0;
+  margin: 0.25rem 0 0 0;
   width: 16.375rem; }
   #contact-container #contact-header {
-    /*font-size: 1.25rem;*/
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    margin: 0 0 .25rem 0; }
+    font-family: "Oswald", sans-serif;
+    margin: 0 0 0.25rem 0; }
   #contact-container .contact {
     display: block;
     text-align: left;
-    margin: 0 0 0 .75rem;
+    margin: 0 0 0 0.75rem;
     line-height: 1.5rem;
     font-weight: 300; }
     #contact-container .contact img {
       width: 1rem;
       height: 1rem;
-      padding-right: .375rem;
+      padding-right: 0.375rem;
       position: relative;
       top: 2px; }
     #contact-container .contact #email-icon {
       top: 3px; }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.25rem;
   text-transform: uppercase;
-  margin: 1.5rem 0 .25rem 0;
-  letter-spacing: .075rem; }
+  margin: 1.5rem 0 0.25rem 0;
+  letter-spacing: 0.075rem; }
 
 h3 {
   font-size: 1.17rem;
@@ -280,11 +361,12 @@ h4 {
   line-height: 1.25rem; }
 
 h5 {
-  font-size: .83rem;
-  margin: 0 0 .125rem 0;
+  font-size: 0.83rem;
+  margin: 0 0 0.125rem 0;
   line-height: 1.25rem; }
 
-ul, li {
+ul,
+li {
   width: 90%;
   font-weight: 300;
   list-style-position: outside;
@@ -294,31 +376,32 @@ ul, li {
 li {
   text-align: left;
   line-height: 1.25rem;
-  margin-bottom: .25rem; }
+  margin-bottom: 0.25rem; }
 
-#bachelor-of-arts-in-interdisciplinary-studies, #resident-assistant {
+#bachelor-of-arts-in-interdisciplinary-studies,
+#resident-assistant {
   margin-top: 1rem; }
 
 #tech-skills-col div:nth-child(1) {
-  margin-top: -.5rem; }
+  margin-top: -0.5rem; }
   @media screen and (min-width: 922px) {
     #tech-skills-col div:nth-child(1) {
-      margin-top: -.25rem; } }
+      margin-top: -0.25rem; } }
 
 #skills-container .skills h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin-top: 1rem;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: .0625rem; }
+  letter-spacing: 0.0625rem; }
 
 .lineBreak {
   width: 75%;
-  height: .5rem;
+  height: 0.5rem;
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
   border-left: none; }
   @media screen and (min-width: 750px) {
     .lineBreak {
@@ -356,7 +439,7 @@ li {
     margin-top: 1.25rem;
     text-align: center;
     line-height: 1.25rem;
-    font-size: .83rem;
+    font-size: 0.83rem;
     text-align: justify; }
     @media screen and (min-width: 866px) {
       #About-Container #text {
@@ -371,10 +454,11 @@ li {
       text-decoration-color: gray; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: #e8e7e5; }
-  body a, body a:visited {
+  body a,
+  body a:visited {
     text-decoration: none;
     color: black; }
 
@@ -385,15 +469,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  /*background-color: rgb(239,189,172);*/
   background-color: #c2dacd;
-  /*background-color: rgb(182,204,187);*/
-  /*background-image: linear-gradient(rgb(194,218,205),rgb(173,196,179));*/
   background-image: linear-gradient(#c2dacd, #b6ccbb);
-  /*background-color: rgb(149,183,148);*/
   box-shadow: 0 1px 1px #ccc;
   border-radius: 2px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500; }
   #Nav #nicoleSandry {
     flex: 0 0 auto;
@@ -401,9 +481,9 @@ body {
     font-size: 1.375rem;
     color: black;
     margin-left: 2rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif; }
+    font-family: "Oswald", sans-serif; }
   #Nav #desktop-nav {
     flex: 0 0 auto;
     order: 2;
@@ -433,7 +513,7 @@ body {
     flex: 0 0 auto;
     color: black;
     text-align: center;
-    padding: .5rem 0; }
+    padding: 0.5rem 0; }
   @media screen and (min-width: 750px) {
     #mobile-nav {
       display: none; } }

@@ -1,16 +1,26 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 const Photos = () => (
 	<div>
-				<NavLink to="/work/photos/people" activeStyle={{ textDecoration: 'underline' }}>People</NavLink>
-				<NavLink to="/work/photos/food" activeStyle={{ textDecoration: 'underline' }}>Food</NavLink>
-		{ routes.map((route,i) => <RouteWithSubRoutes key={i} {...route} />)}
+		<NavLink
+			to="/work/photos/people"
+			activeStyle={{ textDecoration: "underline" }}
+		>
+			People
+		</NavLink>
+		<NavLink
+			to="/work/photos/food"
+			activeStyle={{ textDecoration: "underline" }}
+		>
+			Food
+		</NavLink>
+		{routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
 	</div>
 );
 
-const People = () => ( <h3>People</h3> );
-const Food = () => ( <h3>Food</h3> );
+const People = () => <h3>People</h3>;
+const Food = () => <h3>Food</h3>;
 
 const routes = [
 	{
@@ -26,9 +36,7 @@ const routes = [
 const RouteWithSubRoutes = route => (
 	<Route
 		path={route.path}
-		render={props => (
-			<route.component {...props} routes={route.routes} />
-		)}
+		render={props => <route.component {...props} routes={route.routes} />}
 	/>
 );
 

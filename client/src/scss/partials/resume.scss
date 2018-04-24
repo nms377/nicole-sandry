@@ -4,8 +4,8 @@
 	justify-content: center;
 	padding: 1.5rem 0;
 	text-align: left;
-	font-size: .83rem;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 0.83rem;
+	font-family: "Montserrat", sans-serif;
 	width: 100%;
 
 	@media screen and (min-width: 922px) {
@@ -24,18 +24,19 @@
 
 	a:hover {
 		text-decoration: underline;
-		text-decoration-color: rgb(128,128,128);
+		text-decoration-color: rgb(128, 128, 128);
 	}
 
 	@media screen and (min-width: 750px) {
-		/*background-color: powderblue;*/
 		flex-flow: column wrap;
 		// must set height to stack elements
 		height: 1215px;
 		width: 85%;
 
 		// must set this to stack elements
-		#contact-container, #skills-container, #right-container {
+		#contact-container,
+		#skills-container,
+		#right-container {
 			flex: 1;
 			width: 33%;
 		}
@@ -47,11 +48,10 @@
 			margin: 0;
 			align-self: flex-start;
 			border-right: 1px solid black;
-			/*padding-bottom: 1rem;*/
 
 			#contact-header {
 				text-align: left;
-				margin-left: .75rem;
+				margin-left: 0.75rem;
 			}
 		}
 
@@ -61,9 +61,10 @@
 			align-self: flex-start;
 			border-right: 1px solid black;
 
-			.skills, h2 {
+			.skills,
+			h2 {
 				margin-left: 1rem;
-				padding-right: .75rem;
+				padding-right: 0.75rem;
 			}
 		}
 
@@ -73,11 +74,10 @@
 			order: 3;
 			width: 63%;
 			align-self: flex-end;
-			
-			h2:nth-child(1) {
-				margin: 0 0 .25rem 0;
-			}
 
+			h2:nth-child(1) {
+				margin: 0 0 0.25rem 0;
+			}
 		}
 	}
 
@@ -92,7 +92,7 @@
 	@media screen and (min-width: 831px) and (max-width: 880px) {
 		height: 1130px;
 	}
-	
+
 	@media screen and (min-width: 881px) and (max-width: 890px) {
 		height: 1100px;
 	}
@@ -123,35 +123,33 @@
 #contact-container {
 	flex: 0 0 auto;
 	align-self: center;
-	margin: .25rem 0 0 0;
+	margin: 0.25rem 0 0 0;
 	width: 16.375rem;
 	//font-size: 1rem;
 
 	#contact-header {
-		/*font-size: 1.25rem;*/
 		text-align: center;
 		text-transform: uppercase;
-		font-family: 'Oswald', sans-serif;
-		margin: 0 0 .25rem 0;
-
+		font-family: "Oswald", sans-serif;
+		margin: 0 0 0.25rem 0;
 	}
 
 	.contact {
-			display: block;
-			text-align: left;
-			margin: 0 0 0 .75rem;
-			line-height: 1.5rem;
-			font-weight: 300;
+		display: block;
+		text-align: left;
+		margin: 0 0 0 0.75rem;
+		line-height: 1.5rem;
+		font-weight: 300;
 
 		// contact icons
 		img {
 			width: 1rem;
 			height: 1rem;
-			padding-right: .375rem;
+			padding-right: 0.375rem;
 			position: relative;
 			top: 2px;
 		}
-		
+
 		// adjust email icon to align with text
 		#email-icon {
 			top: 3px;
@@ -161,11 +159,11 @@
 
 // Section Headers
 h2 {
-	font-family: 'Oswald', sans-serif;
+	font-family: "Oswald", sans-serif;
 	font-size: 1.25rem;
 	text-transform: uppercase;
-	margin: 1.5rem 0 .25rem 0;
-	letter-spacing: .075rem;
+	margin: 1.5rem 0 0.25rem 0;
+	letter-spacing: 0.075rem;
 }
 
 // Position & School
@@ -183,37 +181,39 @@ h4 {
 
 // Dates
 h5 {
-	font-size: .83rem;
-	margin: 0 0 .125rem 0;
+	font-size: 0.83rem;
+	margin: 0 0 0.125rem 0;
 	line-height: 1.25rem;
 }
 
 // Responsibilities
-ul, li {
-			width: 90%;
-			font-weight: 300;
-			list-style-position: outside;
-			list-style-type: disc;
-			margin-left: 1rem;
+ul,
+li {
+	width: 90%;
+	font-weight: 300;
+	list-style-position: outside;
+	list-style-type: disc;
+	margin-left: 1rem;
 }
 
 li {
 	text-align: left;
 	line-height: 1.25rem;
-	margin-bottom: .25rem;
+	margin-bottom: 0.25rem;
 }
 
-#bachelor-of-arts-in-interdisciplinary-studies, #resident-assistant {
+#bachelor-of-arts-in-interdisciplinary-studies,
+#resident-assistant {
 	margin-top: 1rem;
 }
 
 // fix the extra spacing between Technical Skills and Languages
 #tech-skills-col {
-	div:nth-child(1){
-		margin-top: -.5rem;
+	div:nth-child(1) {
+		margin-top: -0.5rem;
 
 		@media screen and (min-width: 922px) {
-			margin-top: -.25rem;
+			margin-top: -0.25rem;
 		}
 	}
 }
@@ -221,22 +221,22 @@ li {
 #skills-container {
 	.skills {
 		h4 {
-			font-family: 'Montserrat', sans-serif;
+			font-family: "Montserrat", sans-serif;
 			font-weight: 500;
 			margin-top: 1rem;
-			padding-right: .5rem;
+			padding-right: 0.5rem;
 			text-transform: uppercase;
-			letter-spacing: .0625rem;
+			letter-spacing: 0.0625rem;
 		}
 	}
 }
 
 .lineBreak {
 	width: 75%;
-	height: .5rem;
+	height: 0.5rem;
 	border-top: none;
 	border-right: none;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #cccccc;
 	border-left: none;
 
 	@media screen and (min-width: 750px) {

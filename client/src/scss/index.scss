@@ -5,13 +5,14 @@
 @import "./partials/about";
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  background-color: rgb(232,231,229);
+  background-color: rgb(232, 231, 229);
 
-  a, a:visited {
+  a,
+  a:visited {
     text-decoration: none;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
   }
 }
 
@@ -22,26 +23,22 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  /*background-color: rgb(239,189,172);*/
-  background-color: rgb(194,218,205);
-  /*background-color: rgb(182,204,187);*/
-  /*background-image: linear-gradient(rgb(194,218,205),rgb(173,196,179));*/
-  background-image: linear-gradient(rgb(194,218,205),rgb(182,204,187));
-  /*background-color: rgb(149,183,148);*/
+  background-color: rgb(194, 218, 205);
+  background-image: linear-gradient(rgb(194, 218, 205), rgb(182, 204, 187));
   box-shadow: 0 1px 1px #ccc;
   border-radius: 2px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 
   #nicoleSandry {
-  	flex: 0 0 auto;
+    flex: 0 0 auto;
     order: 1;
     font-size: 1.375rem;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     margin-left: 2rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
 
   #desktop-nav {
@@ -57,22 +54,22 @@ body {
   }
 
   .NavLink {
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     padding-right: 2rem;
   }
 }
 
-#mobile-nav{
+#mobile-nav {
   flex: 0 0 auto;
   order: 3;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
-  background-color: rgba(255,255,255,1.0);
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 1px #ccc;
   border-radius: 2px;
-  
+
   // move div element below the Nav bar when displayed
   position: absolute;
   top: 4rem;
@@ -82,11 +79,11 @@ body {
 
   .NavLinkMobile {
     flex: 0 0 auto;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
-  
+
   // hide when viewing on desktop layout
   @media screen and (min-width: 750px) {
     display: none;
@@ -120,7 +117,7 @@ body {
   .email-icon {
     fill: red;
   }
-  
+
   @media screen and (min-width: 560px) {
     justify-content: center;
     a {
