@@ -1,0 +1,24 @@
+$breakpoints: (
+	'min-mobile':(min-width: 480px),
+	'max-mobile': (max-width: 480px),
+	'min-desktop': (min-width: 750px),
+	'max-desktop': (max-width: 750px),
+	'resume-large': (min-width: 922px),
+	'about-medium': (min-width: 866px),
+	'large': (min-width: 1225px)
+) !default;
+
+// Found this Mixin at CSS-Tricks
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}
