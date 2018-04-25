@@ -214,7 +214,11 @@ table {
     flex: 0 0 auto;
     order: 4;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0rem;
+    -webkit-margin-after: 0rem; }
     .work .workContributions .contributions {
       font-size: 1rem;
       font-family: "Montserrat", sans-serif;
@@ -223,15 +227,32 @@ table {
       @media screen and (min-width: 750px) {
         .work .workContributions .contributions {
           font-size: 1.125rem; } }
-    .work .workContributions ul,
     .work .workContributions li {
       width: 90%;
       text-align: left;
+      line-height: 1.25rem;
       list-style-position: outside;
       list-style-type: disc;
-      margin-left: 1.5rem;
-      margin-bottom: 0.25rem;
-      line-height: 1.25rem; }
+      margin: 0 0 0.25rem 1rem; }
+    .work .workContributions ul {
+      margin: 0 0 0 1.5rem; }
+  .work .links {
+    order: 5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: 0.625rem 0 0.5rem 0;
+    padding: 0 1rem;
+    white-space: nowrap;
+    line-height: 1.5rem; }
+    .work .links p {
+      font-weight: 500;
+      overflow: hidden; }
+    .work .links a {
+      font-weight: 300;
+      padding-left: .625rem; }
+    .work .links a:hover {
+      text-decoration: underline;
+      text-decoration-color: black; }
 
 #Resume {
   display: flex;
@@ -326,8 +347,6 @@ table {
   width: 16.375rem; }
   #contact-container #contact-header {
     text-align: center;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
     margin: 0 0 0.25rem 0; }
   #contact-container .contact {
     display: block;
@@ -344,36 +363,57 @@ table {
     #contact-container .contact #email-icon {
       top: 3px; }
 
-h2 {
+#development-experience,
+#professional-experience,
+#education,
+#technical-skills,
+#contact-header {
   font-family: "Oswald", sans-serif;
   font-size: 1.25rem;
   text-transform: uppercase;
   margin: 1.5rem 0 0.25rem 0;
   letter-spacing: 0.075rem; }
 
-h3 {
+#hele,
+#office-social-media-manager,
+#resident-assistant,
+#fullstack-javascript-web-engineering,
+#bachelor-of-arts-in-interdisciplinary-studies {
   font-size: 1.17rem;
-  font-weight: 500;
   line-height: 1.625rem; }
 
-h4 {
+#-hele-io-https-hele-io-,
+#handcrafted-restaurants-llc,
+#office-of-residential-life-housing-services-at-new-york-university,
+#communications-with-a-minor-in-social-entrepreneurship,
+#languages,
+#frontend,
+#server-side,
+#database,
+#web-skills,
+#business-development {
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.25rem; }
 
-h5 {
+#may-2017,
+#hi-aug-2013-dec-2017,
+#ny-aug-2012-may-2013,
+#devleague,
+#new-york-university-gallatin-school-of-individualized-study-2011-2013 {
   font-size: 0.83rem;
   margin: 0 0 0.125rem 0;
   line-height: 1.25rem; }
 
-ul,
-li {
-  width: 90%;
-  font-weight: 300;
-  list-style-position: outside;
-  list-style-type: disc;
-  margin-left: 1rem; }
+.responsibilities {
+  width: 90%; }
+  .responsibilities li {
+    font-weight: 300;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-left: 1rem; }
 
-li {
+#resp-skills {
   text-align: left;
   line-height: 1.25rem;
   margin-bottom: 0.25rem; }
