@@ -64,6 +64,7 @@ class Nav extends Component {
 					<div id="mobile-nav">
 						<NavLink
 							className="NavLinkMobile"
+							activeClassName="mobileActive"
 							to="/work"
 							onClick={() => this.showHideMobileMenu()}
 						>
@@ -71,6 +72,7 @@ class Nav extends Component {
 						</NavLink>
 						<NavLink
 							className="NavLinkMobile"
+							activeClassName="mobileActive"
 							to="/resume"
 							onClick={() => this.showHideMobileMenu()}
 						>
@@ -78,6 +80,7 @@ class Nav extends Component {
 						</NavLink>
 						<NavLink
 							className="NavLinkMobile"
+							activeClassName="mobileActive"
 							to="/about"
 							onClick={() => this.showHideMobileMenu()}
 						>
