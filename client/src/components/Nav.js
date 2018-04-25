@@ -29,10 +29,7 @@ class Nav extends Component {
 						id="nicoleSandry"
 						exact
 						to="/"
-						activeStyle={{
-							textDecoration: "underline",
-							textDecorationColor: "rgb(255,255,255)"
-						}}
+						activeClassName="active"
 					>
 						Nicole Sandry
 					</NavLink>
@@ -40,33 +37,21 @@ class Nav extends Component {
 						<NavLink
 							className="NavLink"
 							to="/work"
-							activeStyle={{
-								textDecoration: "underline",
-								textDecorationColor: "rgb(255,255,255)",
-								fontWeight: "600"
-							}}
+							activeClassName="active"
 						>
 							Work
 						</NavLink>
 						<NavLink
 							className="NavLink"
 							to="/resume"
-							activeStyle={{
-								textDecoration: "underline",
-								textDecorationColor: "rgb(255,255,255)",
-								fontWeight: "600"
-							}}
+							activeClassName="active"
 						>
 							Resume
 						</NavLink>
 						<NavLink
 							className="NavLink"
 							to="/about"
-							activeStyle={{
-								textDecoration: "underline",
-								textDecorationColor: "rgb(255,255,255)",
-								fontWeight: "600"
-							}}
+							activeClassName="active"
 						>
 							About
 						</NavLink>
