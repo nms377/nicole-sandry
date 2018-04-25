@@ -42,7 +42,9 @@ const Resume = () => {
 						</a>
 					</span>
 					<span className="contact">
-						<a href={PDF} download>
+						<a href={PDF}
+							 target="_blank"
+							 rel="noopener noreferrer">
 							<img
 								src={Download}
 								alt="Download a PDF copy of Nicole's resume"
