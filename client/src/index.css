@@ -163,7 +163,7 @@ table {
   box-shadow: 0 4px 0.5rem #ccc;
   display: flex;
   flex-flow: column wrap; }
-  @media screen and (min-width: 750px) {
+  @media (min-width: 750px) {
     .work {
       max-width: 800px; } }
   .work .workImg {
@@ -173,13 +173,13 @@ table {
     height: 200px;
     object-fit: cover;
     object-position: 50% top; }
-    @media screen and (min-width: 480px) {
+    @media (min-width: 750px) {
       .work .workImg {
         height: 320px; } }
     @media screen and (min-width: 615px) {
       .work .workImg {
         height: 440px; } }
-    @media screen and (min-width: 750px) {
+    @media (min-width: 750px) {
       .work .workImg {
         height: 560px; } }
   .work .company {
@@ -200,14 +200,13 @@ table {
     font-weight: 500;
     margin-bottom: 0.5rem;
     margin-left: 1rem; }
-    @media screen and (min-width: 750px) {
-      .work .position {
-        font-size: 1.125rem; } }
+    .work .position include respond-to('min-desktop') {
+      font-size: 1.125rem; }
   .work .description {
     flex: 0 0 auto;
     order: 3;
     margin-bottom: 0.625rem;
-    line-height: 1rem;
+    line-height: 1.25rem;
     padding: 0 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300; }
@@ -217,15 +216,13 @@ table {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     margin: 0;
-    padding: 0;
-    -webkit-margin-before: 0rem;
-    -webkit-margin-after: 0rem; }
+    padding: 0; }
     .work .workContributions .contributions {
       font-size: 1rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
       margin: 0 0 0.125rem 1rem; }
-      @media screen and (min-width: 750px) {
+      @media (min-width: 750px) {
         .work .workContributions .contributions {
           font-size: 1.125rem; } }
     .work .workContributions li {
@@ -244,7 +241,7 @@ table {
     margin: 0.625rem 0 0.5rem 0;
     padding: 0 1rem;
     white-space: nowrap;
-    line-height: 1.5rem; }
+    line-height: 1.25rem; }
     .work .links p {
       font-weight: 500;
       overflow: hidden; }
@@ -264,7 +261,7 @@ table {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   width: 100%; }
-  @media screen and (min-width: 922px) {
+  @media (min-width: 922px) {
     #Resume {
       width: 100%;
       height: auto; } }
@@ -278,7 +275,7 @@ table {
   #resume-container a:hover {
     text-decoration: underline;
     text-decoration-color: gray; }
-  @media screen and (min-width: 750px) {
+  @media (min-width: 750px) {
     #resume-container {
       flex-flow: column wrap;
       height: 1215px;
@@ -336,7 +333,7 @@ table {
   @media screen and (min-width: 1151px) and (max-width: 1224px) {
     #resume-container {
       height: 980px; } }
-  @media screen and (min-width: 1225px) {
+  @media (min-width: 1225px) {
     #resume-container {
       width: 950px;
       height: 970px; } }
@@ -396,7 +393,7 @@ table {
 #business-development {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.25rem; }
+  line-height: line-height; }
 
 #may-2017,
 #hi-aug-2013-dec-2017,
@@ -426,7 +423,7 @@ table {
 
 #tech-skills-col div:nth-child(1) {
   margin-top: -0.5rem; }
-  @media screen and (min-width: 922px) {
+  @media (min-width: 922px) {
     #tech-skills-col div:nth-child(1) {
       margin-top: -0.25rem; } }
 
@@ -445,7 +442,7 @@ table {
   border-right: none;
   border-bottom: 1px solid #cccccc;
   border-left: none; }
-  @media screen and (min-width: 750px) {
+  @media (min-width: 750px) {
     .lineBreak {
       display: none; } }
 
@@ -461,20 +458,20 @@ table {
   padding-bottom: 1.5rem;
   display: flex;
   flex-flow: column wrap; }
-  @media screen and (min-width: 866px) {
+  @media (min-width: 866px) {
     #About-Container {
       flex-flow: row nowrap;
       width: 85%; } }
-  @media screen and (min-width: 1225px) {
+  @media (min-width: 1225px) {
     #About-Container {
       width: 950px; } }
   #About-Container img {
     align-self: center; }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       #About-Container img {
         width: 100%;
         height: auto; } }
-    @media screen and (min-width: 866px) {
+    @media (min-width: 866px) {
       #About-Container img {
         align-self: flex-start; } }
   #About-Container #text {
@@ -483,7 +480,7 @@ table {
     line-height: 1.25rem;
     font-size: 0.83rem;
     text-align: justify; }
-    @media screen and (min-width: 866px) {
+    @media (min-width: 866px) {
       #About-Container #text {
         text-align: justify;
         margin: 0 0 0 4rem; } }
@@ -529,7 +526,7 @@ body {
     font-weight: 700; }
   #Nav .active {
     text-decoration: none; }
-    @media screen and (min-width: 750px) {
+    @media (min-width: 750px) {
       #Nav .active {
         font-weight: 600;
         text-decoration: underline;
@@ -539,7 +536,7 @@ body {
     flex: 0 0 auto;
     order: 2;
     display: none; }
-    @media screen and (min-width: 750px) {
+    @media (min-width: 750px) {
       #Nav #desktop-nav {
         display: inline;
         align-self: flex-end; } }
@@ -569,7 +566,7 @@ body {
     background-color: black;
     color: white;
     font-weight: 600; }
-  @media screen and (min-width: 750px) {
+  @media (min-width: 750px) {
     #mobile-nav {
       display: none; } }
 
@@ -579,7 +576,7 @@ body {
   padding-right: 2rem; }
   #mobile-icon :hover {
     cursor: pointer; }
-  @media screen and (min-width: 750px) {
+  @media (min-width: 750px) {
     #mobile-icon {
       display: none; } }
 
@@ -588,11 +585,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: 0 2rem 1rem 2rem; }
-  #footer a.svg {
-    display: inline-block; }
-  #footer .email-icon {
-    fill: red; }
-  @media screen and (min-width: 560px) {
+  @media (min-width: 750px) {
     #footer {
       justify-content: center; }
       #footer a {

@@ -2,13 +2,13 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	padding: 1.5rem 0;
+	padding: $bottom 0;
 	text-align: left;
-	font-size: 0.83rem;
+	font-size: $mobile-font-size;
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
 
-	@media screen and (min-width: 922px) {
+	@include respond-to('resume-large') {
 		width: 100%;
 		height: auto;
 	}
@@ -17,7 +17,7 @@
 #resume-container {
 	flex: 0 0 auto;
 	align-self: center;
-	width: 80%;
+	width: $mobile-div-width;
 
 	display: flex;
 	flex-flow: column nowrap;
@@ -27,11 +27,11 @@
 		text-decoration-color: rgb(128, 128, 128);
 	}
 
-	@media screen and (min-width: 750px) {
+	@include respond-to('min-desktop') {
 		flex-flow: column wrap;
 		// must set height to stack elements
 		height: 1215px;
-		width: 85%;
+		width: $desktop-div-width;
 
 		// must set this to stack elements
 		#contact-container,
@@ -42,7 +42,6 @@
 		}
 
 		#contact-container {
-			//background-color: pink;
 			flex: 0 0 auto;
 			order: 1;
 			margin: 0;
@@ -114,7 +113,7 @@
 	}
 
 	// set max width
-	@media screen and (min-width: 1225px) {
+	@include respond-to('large') {
 		width: 950px;
 		height: 970px;
 	}
@@ -125,7 +124,7 @@
 	align-self: center;
 	margin: 0.25rem 0 0 0;
 	width: 16.375rem;
-	//font-size: 1rem;
+	//font-size: $desktop-font-size;
 
 	#contact-header {
 		text-align: center;
@@ -136,7 +135,7 @@
 		display: block;
 		text-align: left;
 		margin: 0 0 0 0.75rem;
-		line-height: 1.5rem;
+		line-height: $line-height + 0.25rem;
 		font-weight: 300;
 
 		// contact icons
@@ -163,7 +162,7 @@
 #contact-header {
 	font-family: "Oswald", sans-serif;
 	font-weight: 700;
-	font-size: 1.25rem;
+	font-size: $desktop-font-size + 0.25rem;
 	text-transform: uppercase;
 	margin: 1.5rem 0 0.25rem 0;
 	letter-spacing: 0.075rem;
@@ -177,7 +176,7 @@
 #bachelor-of-arts-in-interdisciplinary-studies,
 #communications-with-a-minor-in-social-entrepreneurship {
 	font-size: 1.17rem;
-	line-height: 1.625rem;
+	line-height: $line-height + 0.375rem;
 }
 
 // Company
@@ -190,9 +189,9 @@
 #database,
 #web-skills,
 #business-development {
-	font-size: 1rem;
+	font-size: $desktop-font-size;
 	font-weight: 500;
-	line-height: 1.25rem;
+	line-height: line-height;
 }
 
 // Dates & School
@@ -201,9 +200,9 @@
 #ny-aug-2012-may-2013,
 #devleague,
 #new-york-university-gallatin-school-of-individualized-study-2011-2013 {
-	font-size: 0.83rem;
+	font-size: $mobile-font-size;
 	margin: 0 0 0.125rem 0;
-	line-height: 1.25rem;
+	line-height: $line-height;
 }
 
 // Responsibilities
@@ -221,7 +220,7 @@
 
 #resp-skills {
 	text-align: left;
-	line-height: 1.25rem;
+	line-height: $line-height;
 	margin-bottom: 0.25rem;
 }
 
@@ -235,7 +234,7 @@
 	div:nth-child(1) {
 		margin-top: -0.5rem;
 
-		@media screen and (min-width: 922px) {
+		@include respond-to('resume-large') {
 			margin-top: -0.25rem;
 		}
 	}
@@ -246,7 +245,7 @@
 		h4 {
 			font-family: "Montserrat", sans-serif;
 			font-weight: 500;
-			margin-top: 1rem;
+			margin-top: $desktop-font-size;
 			padding-right: 0.5rem;
 			text-transform: uppercase;
 			letter-spacing: 0.0625rem;
@@ -262,7 +261,7 @@
 	border-bottom: 1px solid #cccccc;
 	border-left: none;
 
-	@media screen and (min-width: 750px) {
+	@include respond-to('min-desktop') {
 		display: none;
 	}
 }

@@ -1,5 +1,7 @@
 @import "./partials/reset";
 @import "./partials/_clearfix";
+@import "./mixins.scss";
+@import "./partials/variables";
 @import "./partials/work";
 @import "./partials/resume";
 @import "./partials/about";
@@ -45,7 +47,7 @@ body {
   .active {
     text-decoration: none;
 
-    @media screen and (min-width: 750px) {
+    @include respond-to('min-desktop') {
       font-weight: 600;
       text-decoration: underline;
       text-decoration-color: rgb(255, 255, 255);
@@ -58,8 +60,7 @@ body {
     order: 2;
     display: none;
 
-    // desktop viewing
-    @media screen and (min-width: 750px) {
+    @include respond-to('min-desktop') {
       display: inline;
       align-self: flex-end;
     }
@@ -103,7 +104,7 @@ body {
   }
 
   // hide when viewing on desktop layout
-  @media screen and (min-width: 750px) {
+  @include respond-to('min-desktop') {
     display: none;
   }
 }
@@ -117,7 +118,7 @@ body {
     cursor: pointer;
   }
 
-  @media screen and (min-width: 750px) {
+  @include respond-to('min-desktop') {
     display: none;
   }
 }
@@ -128,15 +129,7 @@ body {
   justify-content: space-between;
   margin: 0 2rem 1rem 2rem;
 
-  a.svg {
-    display: inline-block;
-  }
-
-  .email-icon {
-    fill: red;
-  }
-
-  @media screen and (min-width: 560px) {
+  @include respond-to('min-desktop') {
     justify-content: center;
     a {
       margin: 0 1rem;
