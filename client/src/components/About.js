@@ -9,13 +9,13 @@ class About extends Component {
 					<img src={Portrait} alt="Self-portrait" height="333" />
 					<div id="text">
 						<p>
-							Nicole is a self taught digital photographer and designer based in
+							Nicole is a digital photographer and designer based in
 							Hawaii. She further developed her craft of food photography and
 							design in her last role at Handcrafted Restaurants where she
 							oversaw the social media, brand reputation, marketing, and menu
 							design across three different restaurants. She enjoys learning new
 							concepts, having completed a Javascript Web Engineering coding
-							bootcamp last summer through DevLeague, Hawaii’s premiere learning
+							bootcamp last summer through <a href="https://www.devleague.com/">DevLeague</a>, Hawaii’s premiere learning
 							bootcamp. She currently freelances as a Web Designer while she
 							makes the shift from Business Administration to Frontend
 							Development.
