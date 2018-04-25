@@ -29,7 +29,30 @@ const Developer = () => (
 						information and data from travel APIs
 					</li>
 					<li>Designing the user interface with ReactJS, SASS, and CSS3</li>
+					<li>Designed the logo</li>
 				</ul>
+			</div>
+			<div className="links">
+				<p>
+					Website:
+					<a 
+						href="https://hele.io/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						https://hele.io/
+					</a>
+				</p>
+				<p>
+					GitHub:
+					<a
+						href="https://github.com/nms377/Hele"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						https://github.com/nms377/Hele
+					</a>
+				</p>
 			</div>
 		</div>
 		<div className="work">
@@ -62,6 +85,18 @@ const Developer = () => (
 					</li>
 				</ul>
 			</div>
+			<div className="links">
+				<p>
+					GitHub:
+					<a
+						href="https://github.com/nms377/ATTHackathon-luggage"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						https://github.com/nms377/ATTHackathon-luggage
+					</a>
+				</p>
+			</div>
 		</div>
 		<div className="work">
 			<a
@@ -85,10 +120,22 @@ const Developer = () => (
 					<li>Database designed with Sequelize ORM and Postgresql</li>
 				</ul>
 			</div>
+			<div className="links">
+				<p>
+					GitHub:
+					<a
+						href="https://github.com/nms377/React-Kanban"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						https://github.com/nms377/React-Kanban
+					</a>
+				</p>
+			</div>
 		</div>
 		<div className="work">
 			<a
-				href="https://nms377.github.io/react-instafeed/"
+				href="http://nicolesandry.com/react-instafeed/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
@@ -108,6 +155,28 @@ const Developer = () => (
 					<li>Front-end made with ReactJS</li>
 					<li>HTML, CSS, & SASS for Responsive/Mobile First Web Development</li>
 				</ul>
+			</div>
+			<div className="links">
+				<p>
+					Website:
+					<a
+						href="http://nicolesandry.com/react-instafeed/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						http://nicolesandry.com/react-instafeed/
+					</a>
+				</p>
+				<p>
+					GitHub:
+					<a
+						href="https://github.com/nms377/react-instafeed"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						https://github.com/nms377/react-instafeed
+					</a>
+				</p>
 			</div>
 		</div>
 	</div>
