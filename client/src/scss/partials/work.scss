@@ -1,38 +1,37 @@
 #workContainer {
-	display: flex;
-	flex-flow: column nowrap;
+	@include col-nowrap;
 	padding-bottom: $bottom;
 	font-size: $mobile-font-size;
+	@include montserrat-reg;
 }
 
 .work {
 	// style for container
-	flex: 0 0 auto;
 	width: $mobile-div-width;
+	flex: 0 0 auto;
 	align-self: center;
 	margin-top: $top;
 	padding-bottom: 0.75rem;
-	text-align: left;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0 4px 0.5rem #ccc;
+	text-align: left;
 
-	@include respond-to('min-desktop') {
+	@include respond-to("min-desktop") {
 		max-width: 800px;
 	}
 
 	// style for contents
-	display: flex;
-	flex-flow: column wrap;
+	@include col-wrap;
 
 	.workImg {
+		height: 200px;
+		width: 100%;
 		flex: 0 0 auto;
 		order: 0;
-		width: 100%;
-		height: 200px;
 		object-fit: cover;
 		object-position: 50% top;
 
-		@include respond-to('min-desktop') {
+		@include respond-to("min-desktop") {
 			height: 320px;
 		}
 
@@ -40,7 +39,7 @@
 			height: 440px;
 		}
 
-		@include respond-to('min-desktop') {
+		@include respond-to("min-desktop") {
 			height: 560px;
 		}
 	}
@@ -48,10 +47,9 @@
 	.company {
 		flex: 0 0 auto;
 		order: 1;
-		font-size: $desktop-font-size + 0.125rem;
-		font-family: "Oswald", sans-serif;
-		font-weight: 700;
 		margin: 0.5rem 0 0.5rem 1rem;
+		font-size: $desktop-font-size + 0.125rem;
+		@include oswald-type;
 
 		@media screen and (min-width: 750px) {
 			font-size: $desktop-font-size + 0.5rem;
@@ -61,11 +59,10 @@
 	.position {
 		flex: 0 0 auto;
 		order: 2;
-		font-size: $desktop-font-size;
-		font-family: "Montserrat", sans-serif;
-		font-weight: 500;
 		margin-bottom: 0.5rem;
 		margin-left: 1rem;
+		font-size: $desktop-font-size;
+		font-weight: $body-font-heavy;
 
 		include respond-to('min-desktop') {
 			font-size: $desktop-font-size + 0.125rem;
@@ -76,38 +73,33 @@
 		flex: 0 0 auto;
 		order: 3;
 		margin-bottom: 0.625rem;
-		line-height: $line-height;
 		padding: 0 1rem;
-		font-family: "Montserrat", sans-serif;
-		font-weight: 300;
+		@include montserrat-light;
 	}
 
 	.workContributions {
 		flex: 0 0 auto;
 		order: 4;
-		font-family: "Montserrat", sans-serif;
-		font-weight: 300;
 		margin: 0;
 		padding: 0;
+		@include montserrat-light;
 
 		.contributions {
 			font-size: $desktop-font-size;
-			font-family: "Montserrat", sans-serif;
-			font-weight: 500;
+			font-weight: $body-font-heavy;
 			margin: 0 0 0.125rem 1rem;
 
-			@include respond-to('min-desktop') {
+			@include respond-to("min-desktop") {
 				font-size: $desktop-font-size + 0.125rem;
 			}
 		}
 
 		li {
 			width: 90%;
+			margin: 0 0 0.25rem 1rem;
 			text-align: left;
-			line-height: $line-height;
 			list-style-position: outside;
 			list-style-type: disc;
-			margin: 0 0 0.25rem 1rem;
 		}
 
 		ul {
@@ -117,21 +109,19 @@
 
 	.links {
 		order: 5;
-		font-family: "Montserrat", sans-serif;
-		font-weight: 300;
 		margin: 0.625rem 0 0.5rem 0;
 		padding: 0 1rem;
+		@include montserrat-light;
 		white-space: nowrap;
-		line-height: $line-height;
 
 		p {
-			font-weight: 500;
+			font-weight: $body-font-heavy;
 			overflow: hidden;
 		}
 
 		a {
-			font-weight: 300;
-			padding-left: .625rem;
+			padding-left: 0.625rem;
+			@include montserrat-light;
 		}
 
 		a:hover {

@@ -1,37 +1,34 @@
 #About {
-	display: flex;
-	flex-flow: row wrap;
+	@include row-wrap;
 	justify-content: center;
 	width: 100%;
+	@include montserrat-reg;
 }
 
 #About-Container {
 	width: $mobile-div-width;
 	margin-top: $top;
 	padding-bottom: $bottom;
-
-	display: flex;
-	flex-flow: column wrap;
-
-	@include respond-to('about-medium') {
-		flex-flow: row nowrap;
+	@include col-wrap;
+	@include respond-to("about-medium") {
+		@include row-nowrap;
 		width: $desktop-div-width;
 	}
 
 	// set max width
-	@include respond-to('large') {
+	@include respond-to("large") {
 		width: 950px;
 	}
 
 	img {
 		align-self: center;
 
-		@include respond-to('max-mobile') {
+		@include respond-to("max-mobile") {
 			width: 100%;
 			height: auto;
 		}
 
-		@include respond-to('about-medium') {
+		@include respond-to("about-medium") {
 			align-self: flex-start;
 		}
 	}
@@ -43,7 +40,7 @@
 		font-size: $mobile-font-size;
 		text-align: justify;
 
-		@include respond-to('about-medium') {
+		@include respond-to("about-medium") {
 			text-align: justify;
 			margin: 0 0 0 4rem;
 		}

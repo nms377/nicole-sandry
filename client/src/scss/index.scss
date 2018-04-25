@@ -1,16 +1,14 @@
+@import "./mixins.scss";
 @import "./partials/reset";
 @import "./partials/_clearfix";
-@import "./mixins.scss";
 @import "./partials/variables";
 @import "./partials/work";
 @import "./partials/resume";
 @import "./partials/about";
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  @include montserrat-reg;
   background-color: rgb(232, 231, 229);
-
   a,
   a:visited {
     text-decoration: none;
@@ -20,81 +18,74 @@ body {
 
 #Nav {
   width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
+  @include row-nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  background-color: rgb(194, 218, 205);
-  background-image: linear-gradient(rgb(194, 218, 205), rgb(182, 204, 187));
   box-shadow: 0 1px 1px #ccc;
   border-radius: 2px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  background-color: rgb(194, 218, 205);
+  background-image: linear-gradient(rgb(194, 218, 205), rgb(182, 204, 187));
+  font-weight: $body-font-heavy;
 
   #nicoleSandry {
     flex: 0 0 auto;
     order: 1;
-    font-size: 1.375rem;
-    color: rgb(0, 0, 0);
     margin-left: 2rem;
+    color: rgb(0, 0, 0);
+    @include oswald-type;
+    font-size: 1.375rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
   }
 
   .active {
     text-decoration: none;
 
-    @include respond-to('min-desktop') {
-      font-weight: 600;
+    @include respond-to("min-desktop") {
       text-decoration: underline;
       text-decoration-color: rgb(255, 255, 255);
       -web-kit-text-decoration-color: rgb(255, 255, 255);
+      font-weight: 600;
     }
   }
 
   #desktop-nav {
+    display: none;
     flex: 0 0 auto;
     order: 2;
-    display: none;
-
-    @include respond-to('min-desktop') {
+    @include respond-to("min-desktop") {
       display: inline;
       align-self: flex-end;
     }
   }
 
   .NavLink {
-    color: rgb(0, 0, 0);
     padding-right: 2rem;
+    color: rgb(0, 0, 0);
   }
 }
 
 #mobile-nav {
+  width: 100%;
+  @include col-nowrap;
   flex: 0 0 auto;
   order: 3;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
   margin: 0;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 1px #ccc;
-  border-radius: 2px;
-
   // move div element below the Nav bar when displayed
   position: absolute;
   top: 4rem;
-
   // use z-index to overlap SVG images
   z-index: 1;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px #ccc;
+  background-color: rgba(255, 255, 255, 1);
 
   .NavLinkMobile {
     flex: 0 0 auto;
+    padding: 0.5rem 0;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 0.5rem 0;
   }
 
   .mobileActive {
@@ -104,7 +95,7 @@ body {
   }
 
   // hide when viewing on desktop layout
-  @include respond-to('min-desktop') {
+  @include respond-to("min-desktop") {
     display: none;
   }
 }
@@ -118,18 +109,17 @@ body {
     cursor: pointer;
   }
 
-  @include respond-to('min-desktop') {
+  @include respond-to("min-desktop") {
     display: none;
   }
 }
 
 #footer {
-  display: flex;
-  flex-flow: row nowrap;
+  @include row-nowrap;
   justify-content: space-between;
   margin: 0 2rem 1rem 2rem;
 
-  @include respond-to('min-desktop') {
+  @include respond-to("min-desktop") {
     justify-content: center;
     a {
       margin: 0 1rem;

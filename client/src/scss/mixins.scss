@@ -1,3 +1,41 @@
+@mixin montserrat-reg  {
+	font-family: $body-font;
+	font-weight: $body-font-reg;
+	line-height: $line-height;
+}
+
+@mixin montserrat-light {
+	font-family: $body-font;
+	font-weight: $body-font-light;
+	line-height: $line-height;
+}
+
+@mixin oswald-type {
+	font-family: $header-font;
+	font-weight: $header-weight;
+}
+
+@mixin col-wrap {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+@mixin col-nowrap {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+@mixin row-wrap {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+@mixin row-nowrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+
 $breakpoints: (
 	'min-mobile':(min-width: 480px),
 	'max-mobile': (max-width: 480px),
