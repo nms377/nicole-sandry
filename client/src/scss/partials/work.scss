@@ -18,7 +18,7 @@
 	box-shadow: 0 4px 0.5rem #ccc;
 	text-align: left;
 
-	@include respond-to("min-desktop") {
+	@include respond-to("medium") {
 		max-width: 800px;
 	}
 
@@ -33,7 +33,7 @@
 		object-fit: cover;
 		object-position: 50% top;
 
-		@include respond-to("min-desktop") {
+		@include respond-to("medium") {
 			height: 320px;
 		}
 
@@ -41,7 +41,7 @@
 			height: 440px;
 		}
 
-		@include respond-to("min-desktop") {
+		@include respond-to("medium") {
 			height: 560px;
 		}
 	}
@@ -49,11 +49,13 @@
 	.company {
 		flex: 0 0 auto;
 		order: 1;
-		margin: 0.5rem 0 0.5rem 1rem;
-		font-size: ($desktop-font-size * 1rem) + 0.125rem;
+		margin: 0.5rem 0;
+		padding: 0 1rem;
 		@include oswald-type;
+		font-size: ($desktop-font-size * 1rem) + 0.125rem;
+	  letter-spacing: 0.075rem;
 
-		@media screen and (min-width: 750px) {
+		@include respond-to("medium") {
 			font-size: ($desktop-font-size * 1rem) + 0.5rem;
 		}
 	}
@@ -66,7 +68,7 @@
 		font-size: $desktop-font-size * 1rem;
 		font-weight: $body-font-heavy;
 
-		include respond-to('min-desktop') {
+		include respond-to('medium') {
 			font-size: ($desktop-font-size * 1rem) + 0.125rem;
 		}
 	}
@@ -91,7 +93,7 @@
 			font-weight: $body-font-heavy;
 			margin: 0 0 0.125rem 1rem;
 
-			@include respond-to("min-desktop") {
+			@include respond-to("medium") {
 				font-size: ($desktop-font-size * 1rem) + 0.125rem;
 			}
 		}

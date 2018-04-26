@@ -6,7 +6,7 @@
 	font-size: $mobile-font-size * 1rem;
 	text-align: left;
 
-	@include respond-to('resume-large') {
+	@include respond-to("resume-large") {
 		height: auto;
 		width: 100%;
 	}
@@ -17,17 +17,17 @@
 	@include col-nowrap;
 	flex: 0 0 auto;
 	align-self: center;
-	
 	a:hover {
 		text-decoration: underline;
 		text-decoration-color: rgb(128, 128, 128);
 	}
 
-	@include respond-to('min-desktop') {
+	@include respond-to("medium") {
 		@include col-wrap;
 		// must set height to stack elements
-		height: 1215px;
+		max-height: 1215px;
 		width: $desktop-div-width * 1%;
+		max-width: 1080px;
 
 		// must set this to stack elements
 		#contact-container,
@@ -42,7 +42,6 @@
 			order: 1;
 			align-self: flex-start;
 			margin: 0;
-			border-right: 1px solid black;
 
 			#contact-header {
 				margin-left: 0.75rem;
@@ -53,7 +52,6 @@
 		#skills-container {
 			order: 2;
 			align-self: flex-start;
-			border-right: 1px solid black;
 
 			.skills,
 			h2 {
@@ -67,49 +65,13 @@
 			flex: 0 0 100%;
 			order: 3;
 			align-self: flex-end;
+			padding-left: 2.375rem;
+			border-left: 1px solid black;
 
 			h2:nth-child(1) {
 				margin: 0 0 0.25rem 0;
 			}
 		}
-	}
-
-	@media screen and (min-width: 766px) and (max-width: 800px) {
-		height: 1170px;
-	}
-
-	@media screen and (min-width: 801px) and (max-width: 830px) {
-		height: 1150px;
-	}
-
-	@media screen and (min-width: 831px) and (max-width: 880px) {
-		height: 1130px;
-	}
-
-	@media screen and (min-width: 881px) and (max-width: 890px) {
-		height: 1100px;
-	}
-
-	@media screen and (min-width: 891px) and (max-width: 998px) {
-		height: 1060px;
-	}
-
-	@media screen and (min-width: 999px) and (max-width: 1080px) {
-		height: 1000px;
-	}
-
-	@media screen and (min-width: 1081px) and (max-width: 1150px) {
-		height: 990px;
-	}
-
-	@media screen and (min-width: 1151px) and (max-width: 1224px) {
-		height: 980px;
-	}
-
-	// set max width
-	@include respond-to('large') {
-		height: 970px;
-		width: 950px;
 	}
 }
 
@@ -156,7 +118,6 @@
 	margin: 1.5rem 0 0.25rem 0;
 	@include oswald-type;
 	font-size: ($desktop-font-size * 1rem) + 0.25rem;
-	text-transform: uppercase;
 	letter-spacing: 0.075rem;
 }
 
@@ -224,7 +185,7 @@
 	div:nth-child(1) {
 		margin-top: -0.5rem;
 
-		@include respond-to('resume-large') {
+		@include respond-to("resume-large") {
 			margin-top: -0.25rem;
 		}
 	}
@@ -250,7 +211,7 @@
 	border-bottom: 1px solid #cccccc;
 	border-left: none;
 
-	@include respond-to('min-desktop') {
+	@include respond-to("medium") {
 		display: none;
 	}
 }

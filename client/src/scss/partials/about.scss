@@ -8,6 +8,7 @@
 #About-Container {
 	width: $mobile-div-width * 1%;
 	@include col-wrap;
+	justify-content: center;
 	@include respond-to("about-medium") {
 		@include row-nowrap;
 		width: $desktop-div-width * 1%;
@@ -21,7 +22,7 @@
 	img {
 		align-self: center;
 
-		@include respond-to("max-mobile") {
+		@include respond-to("small-max") {
 			width: 100%;
 			height: auto;
 		}
@@ -36,6 +37,7 @@
 		text-align: justify;
 
 		@include respond-to("about-medium") {
+			max-width: 600px;
 			text-align: justify;
 			margin: 0 0 0 4rem;
 
