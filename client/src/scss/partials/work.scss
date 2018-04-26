@@ -1,16 +1,18 @@
 #workContainer {
 	@include col-nowrap;
-	padding-bottom: $bottom;
-	font-size: $mobile-font-size;
+	font-size: $mobile-font-size * 1rem;
 	@include montserrat-reg;
 }
 
 .work {
 	// style for container
-	width: $mobile-div-width;
+	width: $mobile-div-width * 1%;
 	flex: 0 0 auto;
 	align-self: center;
-	margin-top: $top;
+	margin-top: $top * 1rem;
+	&:nth-child(1) {
+		margin-top: 0;
+	}
 	padding-bottom: 0.75rem;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0 4px 0.5rem #ccc;
@@ -48,11 +50,11 @@
 		flex: 0 0 auto;
 		order: 1;
 		margin: 0.5rem 0 0.5rem 1rem;
-		font-size: $desktop-font-size + 0.125rem;
+		font-size: ($desktop-font-size * 1rem) + 0.125rem;
 		@include oswald-type;
 
 		@media screen and (min-width: 750px) {
-			font-size: $desktop-font-size + 0.5rem;
+			font-size: ($desktop-font-size * 1rem) + 0.5rem;
 		}
 	}
 
@@ -61,11 +63,11 @@
 		order: 2;
 		margin-bottom: 0.5rem;
 		margin-left: 1rem;
-		font-size: $desktop-font-size;
+		font-size: $desktop-font-size * 1rem;
 		font-weight: $body-font-heavy;
 
 		include respond-to('min-desktop') {
-			font-size: $desktop-font-size + 0.125rem;
+			font-size: ($desktop-font-size * 1rem) + 0.125rem;
 		}
 	}
 
@@ -85,13 +87,17 @@
 		@include montserrat-light;
 
 		.contributions {
-			font-size: $desktop-font-size;
+			font-size: $desktop-font-size * 1rem;
 			font-weight: $body-font-heavy;
 			margin: 0 0 0.125rem 1rem;
 
 			@include respond-to("min-desktop") {
-				font-size: $desktop-font-size + 0.125rem;
+				font-size: ($desktop-font-size * 1rem) + 0.125rem;
 			}
+		}
+
+		ul {
+			margin: 0 0 0 1.5rem;
 		}
 
 		li {
@@ -100,10 +106,6 @@
 			text-align: left;
 			list-style-position: outside;
 			list-style-type: disc;
-		}
-
-		ul {
-			margin: 0 0 0 1.5rem;
 		}
 	}
 
@@ -122,11 +124,11 @@
 		a {
 			padding-left: 0.625rem;
 			@include montserrat-light;
-		}
 
-		a:hover {
-			text-decoration: underline;
-			text-decoration-color: rgb(0, 0, 0);
+			&:hover {
+				text-decoration: underline;
+				text-decoration-color: rgb(0, 0, 0);
+			}
 		}
 	}
 }

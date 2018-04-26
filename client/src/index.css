@@ -149,11 +149,10 @@ table {
 #workContainer {
   display: flex;
   flex-flow: column nowrap;
-  padding-bottom: 1.5rem;
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.25rem; }
+  line-height: 1.25; }
 
 .work {
   width: 80%;
@@ -166,6 +165,8 @@ table {
   text-align: left;
   display: flex;
   flex-flow: column wrap; }
+  .work:nth-child(1) {
+    margin-top: 0; }
   @media (min-width: 750px) {
     .work {
       max-width: 800px; } }
@@ -211,7 +212,7 @@ table {
     padding: 0 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    line-height: 1.25rem; }
+    line-height: 1.25; }
   .work .workContributions {
     flex: 0 0 auto;
     order: 4;
@@ -219,7 +220,7 @@ table {
     padding: 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    line-height: 1.25rem; }
+    line-height: 1.25; }
     .work .workContributions .contributions {
       font-size: 1rem;
       font-weight: 500;
@@ -227,21 +228,21 @@ table {
       @media (min-width: 750px) {
         .work .workContributions .contributions {
           font-size: 1.125rem; } }
+    .work .workContributions ul {
+      margin: 0 0 0 1.5rem; }
     .work .workContributions li {
       width: 90%;
       margin: 0 0 0.25rem 1rem;
       text-align: left;
       list-style-position: outside;
       list-style-type: disc; }
-    .work .workContributions ul {
-      margin: 0 0 0 1.5rem; }
   .work .links {
     order: 5;
     margin: 0.625rem 0 0.5rem 0;
     padding: 0 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    line-height: 1.25rem;
+    line-height: 1.25;
     white-space: nowrap; }
     .work .links p {
       font-weight: 500;
@@ -250,20 +251,19 @@ table {
       padding-left: 0.625rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 300;
-      line-height: 1.25rem; }
-    .work .links a:hover {
-      text-decoration: underline;
-      text-decoration-color: black; }
+      line-height: 1.25; }
+      .work .links a:hover {
+        text-decoration: underline;
+        text-decoration-color: black; }
 
 #Resume {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 1.5rem 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 1.25;
   font-size: 0.83rem;
   text-align: left; }
   @media (min-width: 922px) {
@@ -358,7 +358,7 @@ table {
     text-align: left;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    line-height: 1.25rem;
+    line-height: 1.25;
     line-height: 1.5rem; }
     #contact-container .contact img {
       height: 1rem;
@@ -400,8 +400,7 @@ table {
 #web-skills,
 #business-development {
   font-size: 1rem;
-  font-weight: 500;
-  line-height: line-height; }
+  font-weight: 500; }
 
 #may-2017,
 #hi-aug-2013-dec-2017,
@@ -409,8 +408,7 @@ table {
 #devleague,
 #new-york-university-gallatin-school-of-individualized-study-2011-2013 {
   margin: 0 0 0.125rem 0;
-  font-size: 0.83rem;
-  line-height: 1.25rem; }
+  font-size: 0.83rem; }
 
 .responsibilities {
   width: 90%; }
@@ -418,7 +416,7 @@ table {
     margin-left: 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    line-height: 1.25rem;
+    line-height: 1.25;
     list-style-position: outside;
     list-style-type: disc; }
 
@@ -461,13 +459,11 @@ table {
   justify-content: center;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 1.25rem; }
+  font-weight: 300;
+  line-height: 1.25; }
 
 #About-Container {
   width: 80%;
-  margin-top: 1.25rem;
-  padding-bottom: 1.5rem;
   display: flex;
   flex-flow: column wrap; }
   @media (min-width: 866px) {
@@ -488,17 +484,14 @@ table {
       #About-Container img {
         align-self: flex-start; } }
   #About-Container #text {
-    margin-top: 1.25rem;
-    text-align: center;
-    line-height: 1.25rem;
     font-size: 0.83rem;
     text-align: justify; }
     @media (min-width: 866px) {
       #About-Container #text {
         text-align: justify;
-        margin: 0 0 0 4rem; } }
-    #About-Container #text p:first-child {
-      margin-top: 0; }
+        margin: 0 0 0 4rem; }
+        #About-Container #text p:nth-child(1) {
+          margin-top: 0; } }
     #About-Container #text p {
       margin-top: 1.25rem; }
     #About-Container #text a:hover {
@@ -508,7 +501,7 @@ table {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 1.25;
   background-color: #e8e7e5; }
   body a,
   body a:visited {
@@ -521,6 +514,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1.5rem;
   padding: 1rem 0;
   box-shadow: 0 1px 1px #ccc;
   border-radius: 2px;
@@ -597,7 +591,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin: 0 2rem 1rem 2rem; }
+  margin: 1.5rem 2rem; }
   @media (min-width: 750px) {
     #footer {
       justify-content: center; }

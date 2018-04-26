@@ -1,13 +1,16 @@
-$bottom: 1.5rem;
-$mobile-div-width: 80%;
-$desktop-div-width: 85%;
-$top: 1.25rem;
-$line-height: 1.25rem;
-$mobile-font-size: 0.83rem;
-$desktop-font-size: 1rem;
+// Font & Styles
 $body-font: ('Montserrat', sans-serif);
 $body-font-light: 300;
-$body-font-reg: 400;
 $body-font-heavy: 500;
+$body-font-reg: 400;
+$desktop-font-size: 1;
+$mobile-font-size: 0.83;
 $header-font: ('Oswald', sans-serif);
 $header-weight: 700; 
+$line-height: 1.25;
+
+// Views
+$desktop-div-width: 85;
+$mobile-div-width: 80;
+$bottom: 1.5;
+$top: 1.25;

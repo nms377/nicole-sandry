@@ -2,9 +2,8 @@
 	width: 100%;
 	@include row-wrap;
 	justify-content: center;
-	padding: $bottom 0;
 	@include montserrat-reg;
-	font-size: $mobile-font-size;
+	font-size: $mobile-font-size * 1rem;
 	text-align: left;
 
 	@include respond-to('resume-large') {
@@ -14,7 +13,7 @@
 }
 
 #resume-container {
-	width: $mobile-div-width;
+	width: $mobile-div-width * 1%;
 	@include col-nowrap;
 	flex: 0 0 auto;
 	align-self: center;
@@ -28,7 +27,7 @@
 		@include col-wrap;
 		// must set height to stack elements
 		height: 1215px;
-		width: $desktop-div-width;
+		width: $desktop-div-width * 1%;
 
 		// must set this to stack elements
 		#contact-container,
@@ -130,7 +129,7 @@
 		margin: 0 0 0 0.75rem;
 		text-align: left;
 		@include montserrat-light;
-		line-height: $line-height + 0.25rem;
+		line-height: ($line-height * 1rem) + 0.25rem;
 
 		// contact icons
 		img {
@@ -156,7 +155,7 @@
 #contact-header {
 	margin: 1.5rem 0 0.25rem 0;
 	@include oswald-type;
-	font-size: $desktop-font-size + 0.25rem;
+	font-size: ($desktop-font-size * 1rem) + 0.25rem;
 	text-transform: uppercase;
 	letter-spacing: 0.075rem;
 }
@@ -169,7 +168,7 @@
 #bachelor-of-arts-in-interdisciplinary-studies,
 #communications-with-a-minor-in-social-entrepreneurship {
 	font-size: 1.17rem;
-	line-height: $line-height + 0.375rem;
+	line-height: ($line-height * 1rem) + 0.375rem;
 }
 
 // Company
@@ -182,9 +181,8 @@
 #database,
 #web-skills,
 #business-development {
-	font-size: $desktop-font-size;
+	font-size: $desktop-font-size * 1rem;
 	font-weight: $body-font-heavy;
-	line-height: line-height;
 }
 
 // Dates & School
@@ -194,8 +192,7 @@
 #devleague,
 #new-york-university-gallatin-school-of-individualized-study-2011-2013 {
 	margin: 0 0 0.125rem 0;
-	font-size: $mobile-font-size;
-	line-height: $line-height;
+	font-size: $mobile-font-size * 1rem;
 }
 
 // Responsibilities
@@ -214,7 +211,7 @@
 #resp-skills {
 	margin-bottom: 0.25rem;
 	text-align: left;
-	line-height: $line-height;
+	line-height: $line-height * 1rem;
 }
 
 #bachelor-of-arts-in-interdisciplinary-studies,
@@ -238,7 +235,7 @@
 		h4 {
 			padding-right: 0.5rem;
 			font-weight: $body-font-heavy;
-			margin-top: $desktop-font-size;
+			margin-top: 1rem;
 			letter-spacing: 0.0625rem;
 			text-transform: uppercase;
 		}

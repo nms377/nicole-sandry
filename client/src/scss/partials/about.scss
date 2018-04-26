@@ -2,17 +2,15 @@
 	@include row-wrap;
 	justify-content: center;
 	width: 100%;
-	@include montserrat-reg;
+	@include montserrat-light;
 }
 
 #About-Container {
-	width: $mobile-div-width;
-	margin-top: $top;
-	padding-bottom: $bottom;
+	width: $mobile-div-width * 1%;
 	@include col-wrap;
 	@include respond-to("about-medium") {
 		@include row-nowrap;
-		width: $desktop-div-width;
+		width: $desktop-div-width * 1%;
 	}
 
 	// set max width
@@ -34,23 +32,20 @@
 	}
 
 	#text {
-		margin-top: $top;
-		text-align: center;
-		line-height: $line-height;
-		font-size: $mobile-font-size;
+		font-size: $mobile-font-size * 1rem;
 		text-align: justify;
 
 		@include respond-to("about-medium") {
 			text-align: justify;
 			margin: 0 0 0 4rem;
-		}
 
-		p:first-child {
-			margin-top: 0;
+			p:nth-child(1) {
+				margin-top: 0;
+			}
 		}
 
 		p {
-			margin-top: $top;
+			margin-top: $top * 1rem ;
 		}
 
 		a:hover {
