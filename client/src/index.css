@@ -189,11 +189,14 @@ table {
   .work .company {
     flex: 0 0 auto;
     order: 1;
-    margin: 0.5rem 0 0.5rem 1rem;
-    font-size: 1.125rem;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
     font-family: "Oswald", sans-serif;
-    font-weight: 700; }
-    @media screen and (min-width: 750px) {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 0.075rem; }
+    @media (min-width: 750px) {
       .work .company {
         font-size: 1.5rem; } }
   .work .position {
@@ -203,7 +206,7 @@ table {
     margin-left: 1rem;
     font-size: 1rem;
     font-weight: 500; }
-    .work .position include respond-to('min-desktop') {
+    .work .position include respond-to('medium') {
       font-size: 1.125rem; }
   .work .description {
     flex: 0 0 auto;
@@ -284,8 +287,9 @@ table {
     #resume-container {
       display: flex;
       flex-flow: column wrap;
-      height: 1215px;
-      width: 85%; }
+      max-height: 1215px;
+      width: 85%;
+      max-width: 1080px; }
       #resume-container #contact-container,
       #resume-container #skills-container,
       #resume-container #right-container {
@@ -295,15 +299,13 @@ table {
         flex: 0 0 auto;
         order: 1;
         align-self: flex-start;
-        margin: 0;
-        border-right: 1px solid black; }
+        margin: 0; }
         #resume-container #contact-container #contact-header {
           margin-left: 0.75rem;
           text-align: left; }
       #resume-container #skills-container {
         order: 2;
-        align-self: flex-start;
-        border-right: 1px solid black; }
+        align-self: flex-start; }
         #resume-container #skills-container .skills,
         #resume-container #skills-container h2 {
           margin-left: 1rem;
@@ -312,37 +314,11 @@ table {
         width: 63%;
         flex: 0 0 100%;
         order: 3;
-        align-self: flex-end; }
+        align-self: flex-end;
+        padding-left: 2.375rem;
+        border-left: 1px solid black; }
         #resume-container #right-container h2:nth-child(1) {
           margin: 0 0 0.25rem 0; } }
-  @media screen and (min-width: 766px) and (max-width: 800px) {
-    #resume-container {
-      height: 1170px; } }
-  @media screen and (min-width: 801px) and (max-width: 830px) {
-    #resume-container {
-      height: 1150px; } }
-  @media screen and (min-width: 831px) and (max-width: 880px) {
-    #resume-container {
-      height: 1130px; } }
-  @media screen and (min-width: 881px) and (max-width: 890px) {
-    #resume-container {
-      height: 1100px; } }
-  @media screen and (min-width: 891px) and (max-width: 998px) {
-    #resume-container {
-      height: 1060px; } }
-  @media screen and (min-width: 999px) and (max-width: 1080px) {
-    #resume-container {
-      height: 1000px; } }
-  @media screen and (min-width: 1081px) and (max-width: 1150px) {
-    #resume-container {
-      height: 990px; } }
-  @media screen and (min-width: 1151px) and (max-width: 1224px) {
-    #resume-container {
-      height: 980px; } }
-  @media (min-width: 1225px) {
-    #resume-container {
-      height: 970px;
-      width: 950px; } }
 
 #contact-container {
   width: 16.375rem;
@@ -377,8 +353,8 @@ table {
   margin: 1.5rem 0 0.25rem 0;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
   text-transform: uppercase;
+  font-size: 1.25rem;
   letter-spacing: 0.075rem; }
 
 #hele,
@@ -465,15 +441,13 @@ table {
 #About-Container {
   width: 80%;
   display: flex;
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  justify-content: center; }
   @media (min-width: 866px) {
     #About-Container {
       display: flex;
       flex-flow: row nowrap;
       width: 85%; } }
-  @media (min-width: 1225px) {
-    #About-Container {
-      width: 950px; } }
   #About-Container img {
     align-self: center; }
     @media (max-width: 480px) {
@@ -488,6 +462,7 @@ table {
     text-align: justify; }
     @media (min-width: 866px) {
       #About-Container #text {
+        max-width: 600px;
         text-align: justify;
         margin: 0 0 0 4rem; }
         #About-Container #text p:nth-child(1) {
@@ -528,9 +503,9 @@ body {
     color: black;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
     font-size: 1.375rem;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase; }
+    letter-spacing: 0.5rem; }
   #Nav .active {
     text-decoration: none; }
     @media (min-width: 750px) {
@@ -570,8 +545,8 @@ body {
     color: black;
     text-align: center; }
   #mobile-nav .mobileActive {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-weight: 600; }
   @media (min-width: 750px) {
     #mobile-nav {

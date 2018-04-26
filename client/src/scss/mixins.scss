@@ -13,6 +13,7 @@
 @mixin oswald-type {
 	font-family: $header-font;
 	font-weight: $header-weight;
+	text-transform: uppercase;
 }
 
 @mixin col-wrap {
@@ -37,13 +38,12 @@
 
 
 $breakpoints: (
-	'min-mobile':(min-width: 480px),
-	'max-mobile': (max-width: 480px),
-	'min-desktop': (min-width: 750px),
-	'max-desktop': (max-width: 750px),
+	'small-min':(min-width: 480px),
+	'small-max': (max-width: 480px),
+	'medium': (min-width: 750px),
 	'resume-large': (min-width: 922px),
 	'about-medium': (min-width: 866px),
-	'large': (min-width: 1225px)
+	'large-min': (min-width: 1225px)
 ) !default;
 
 // Found this Mixin at CSS-Tricks
