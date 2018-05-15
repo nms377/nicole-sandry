@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import React from "react";
 const HeleIo = require("../assets/heleio.png");
 const Leiover = require("../assets/leiover.png");
 const Kanban = require("../assets/react-kanban.png");

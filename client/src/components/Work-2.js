@@ -23,8 +23,6 @@ const Work = ({ match }) => (
         </NavLink>
       </li>
     </ul>
-
-    <Route exact path={match.url} render={() => <Developer />} />
   </div>
 );
 
