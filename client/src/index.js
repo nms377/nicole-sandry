@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import About from "./components/About";
-import Work from "./components/Work";
+import Work2 from "./components/Work-2";
 import Resume from "./components/Resume";
 import Developer from "./components/Developer";
 import Photos from "./components/Photos";
@@ -16,7 +16,7 @@ ReactDOM.render(
 		<div>
 			<Nav />
 			<Route exact path="/" component={Developer} />
-			<Route path="/work" component={Work} />
+			<Route path="/work" component={Work2} />
 			<Route path="/resume" component={Resume} />
 			<Route path="/about" component={About} />
 			<Route path="/work/developer" component={Developer} />
