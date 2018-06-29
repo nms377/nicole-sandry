@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Portrait from "../assets/nicolesandry.jpg";
+import Portrait from "../assets/nicolesandry2.jpg";
 
 class About extends Component {
 	render() {
@@ -9,22 +9,17 @@ class About extends Component {
 					<img src={Portrait} alt="Self-portrait" height="333" />
 					<div id="text">
 						<p>
-							Nicole is a digital photographer and designer based in
-							Hawaii. She further developed her craft of food photography and
-							design in her last role at Handcrafted Restaurants where she
-							oversaw the social media, brand reputation, marketing, and menu
-							design across three different restaurants. She enjoys learning new
-							concepts, having completed a Javascript Web Engineering coding
-							bootcamp last summer through <a href="https://www.devleague.com/">DevLeague</a>, Hawaii’s premiere learning
-							bootcamp. She currently freelances as a Web Designer while she
-							makes the shift from Business Administration to Frontend
-							Development.
+							I am a digital photographer and designer based in Hawaii. I
+							developed my craft of food photography and design in my last role
+							at Handcrafted Restaurants overseeing the social media, brand
+							reputation, and marketing. I enjoy learning new concepts having
+							completed a Javascript Web Engineering coding bootcamp last summer
+							and am seeking opportunities in Front End Development.
 						</p>
 
 						<p>
-							Nicole is available for web design and social media marketing
-							projects, as well as private consultations. You can reach Nicole
-							at <a href="mailto:nsandry@gmail.com">nsandry@gmail.com</a>.
+							I am available for web design and social media marketing projects,
+							as well as private consultations. Contact me at <a href="mailto:nsandry@gmail.com">nsandry@gmail.com</a>.
 						</p>
 					</div>
 				</div>
