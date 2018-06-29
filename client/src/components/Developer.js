@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-const HeleIo = require("../assets/heleio.png");
-const Leiover = require("../assets/leiover.png");
+const HeleIo = require("../assets/heleio2.png");
+const Leiover = require("../assets/leiover2.png");
 const Kanban = require("../assets/react-kanban.png");
 const Instafeed = require("../assets/react-insta.png");
 
