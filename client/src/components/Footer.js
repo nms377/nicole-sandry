@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 const GitHub = require("../assets/footer/GitHub.svg");
 const LinkedIn = require("../assets/footer/LinkedIn.svg");
-const IG = require("../assets/footer/Instagram.svg");
 const email = require("../assets/footer/Email.svg");
 
 const Footer = () => {
@@ -25,14 +24,6 @@ const Footer = () => {
 				rel="noopener noreferrer"
 			>
 				<img src={LinkedIn} alt="View my LinkedIn Profile" />
-			</a>
-			<a
-				href="https://www.instagram.com/nicolesandry/"
-				className="svg"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<img src={IG} alt="View my Instagram Profile" />
 			</a>
 		</div>
 	);
