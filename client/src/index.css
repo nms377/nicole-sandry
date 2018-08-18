@@ -146,118 +146,34 @@ table {
   display: block; }
 
 /* close commented backslash hack */
-#workContainer {
+#workMainContainer {
   display: flex;
-  flex-flow: column nowrap;
-  font-size: 0.83rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 1.25; }
+  flex-flow: row wrap;
+  justify-content: center; }
 
-.work {
-  width: 80%;
-  flex: 0 0 auto;
-  align-self: center;
-  margin-top: 1.25rem;
-  padding-bottom: 0.75rem;
-  background-color: white;
-  box-shadow: 0 4px 0.5rem #ccc;
-  text-align: left;
-  display: flex;
-  flex-flow: column wrap; }
-  .work:nth-child(1) {
-    margin-top: 0; }
-  @media (min-width: 750px) {
-    .work {
-      max-width: 800px; } }
-  .work .workImg {
-    height: 200px;
-    width: 100%;
-    flex: 0 0 auto;
-    order: 0;
-    object-fit: cover;
-    object-position: 50% top; }
-    @media (min-width: 750px) {
-      .work .workImg {
-        height: 320px; } }
-    @media screen and (min-width: 615px) {
-      .work .workImg {
-        height: 440px; } }
-    @media (min-width: 750px) {
-      .work .workImg {
-        height: 560px; } }
-  .work .company {
-    flex: 0 0 auto;
-    order: 1;
-    margin: 0.5rem 0;
-    padding: 0 1rem;
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    letter-spacing: 0.075rem; }
-    @media (min-width: 750px) {
-      .work .company {
-        font-size: 1.5rem; } }
-  .work .position {
-    flex: 0 0 auto;
-    order: 2;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-    font-size: 1rem;
-    font-weight: 500; }
-    .work .position include respond-to('medium') {
-      font-size: 1.125rem; }
-  .work .description {
-    flex: 0 0 auto;
-    order: 3;
-    margin-bottom: 0.625rem;
-    padding: 0 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    line-height: 1.25; }
-  .work .workContributions {
-    flex: 0 0 auto;
-    order: 4;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    line-height: 1.25; }
-    .work .workContributions .contributions {
-      font-size: 1rem;
-      font-weight: 500;
-      margin: 0 0 0.125rem 1rem; }
-      @media (min-width: 750px) {
-        .work .workContributions .contributions {
-          font-size: 1.125rem; } }
-    .work .workContributions ul {
-      margin: 0 0 0 1.5rem; }
-    .work .workContributions li {
-      width: 90%;
-      margin: 0 0 0.25rem 1rem;
-      text-align: left;
-      list-style-position: outside;
-      list-style-type: disc; }
-  .work .links {
-    order: 5;
-    margin: 0.625rem 0 0.5rem 0;
-    padding: 0 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    line-height: 1.25;
-    white-space: nowrap; }
-    .work .links p {
-      font-weight: 500;
-      overflow: hidden; }
-    .work .links a {
-      padding-left: 0.625rem;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 300;
-      line-height: 1.25; }
-      .work .links a:hover {
-        text-decoration: underline;
-        text-decoration-color: black; }
+.WorkComponents {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+  max-width: 800px; }
+
+.WorkContainers {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border: 2px dotted red;
+  transition: background-color ease-out 0.5s; }
+  .WorkContainers:hover {
+    background-color: pink;
+    transition: background-color ease-in 0.5s; }
+
+.WorkTitle {
+  font-size: 1.5rem; }
+
+.WorkDescription {
+  font-size: 0.83rem; }
 
 #Resume {
   width: 100%;
