@@ -1,0 +1,35 @@
+#workMainContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.WorkComponents {
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1rem;
+	width: 100%;
+	max-width: 800px;
+}
+
+.WorkContainers {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	border: 2px dotted red;
+	transition: background-color ease-out 0.5s;
+
+	&:hover {
+		background-color: pink;
+		transition: background-color ease-in 0.5s;
+	}
+}
+
+.WorkTitle {
+	font-size: 1.5rem;
+}
+
+.WorkDescription {
+	font-size: 0.83rem;
+}
