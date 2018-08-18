@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-import React from "react";
-const HeleIo = require("../assets/heleio.png");
-const Leiover = require("../assets/leiover.png");
-=======
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 const HeleIo = require("../assets/heleio2.png");
 const Leiover = require("../assets/leiover2.png");
->>>>>>> master
 const Kanban = require("../assets/react-kanban.png");
 const Instafeed = require("../assets/react-insta.png");
 
@@ -41,11 +35,7 @@ const Developer = () => (
 			<div className="links">
 				<p>
 					Website:
-					<a 
-						href="https://hele.io/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+					<a href="https://hele.io/" target="_blank" rel="noopener noreferrer">
 						https://hele.io/
 					</a>
 				</p>
