@@ -5,36 +5,44 @@ import Developer from "./Developer";
 
 const workIndex = [
   {
-    title: "Hele",
-    description: "A web app that finds travel accommodations and builds a custom travel itinerary."
+    title: "Hele.io",
+    description: "A web app that finds travel accommodations and builds a custom travel itinerary.",
+    link: "hele"
   },
   {
     title: "AT&T Hackathon 2017",
-    description: "A hypothetical luggage concierge servicing Oahu visitors."
+    description: "A hypothetical luggage concierge servicing Oahu visitors.",
+    link: "ATT-Hackathon"
   },
   {
     title: 'React Kanban',
-    description: 'A digital Kanban board made with React.'
+    description: 'A digital Kanban board made with React.',
+    link: "react-kanban"
   },
   {
     title: 'React Instafeed',
-    description: 'Recreation of my personal Instagram feed using ReactJS.'
-  },
-  {
-    title: 'Monkeypod Kitchen',
-    description: 'Food Photography.'
-  },
-  {
-    title: 'Moku Kitchen',
-    description: 'Food Photography.'
-  },
-  {
-    title: 'The Beach House Restaurant',
-    description: 'Food Photography.'
+    description: 'Recreation of my personal Instagram feed using ReactJS.',
+    link: "react-instafeed"
   },
   {
     title: 'Portraits',
-    description: 'Grad Photos, Engagements, and Maternity Shoots.'
+    description: 'Grad Photos, Engagements, and Maternity Shoots.',
+    link: "portraits"
+  },
+  {
+    title: 'Monkeypod Kitchen',
+    description: 'Food Photography.',
+    link: "monkeypod"
+  },
+  {
+    title: 'Moku Kitchen',
+    description: 'Food Photography.',
+    link: "moku"
+  },
+  {
+    title: 'The Beach House',
+    description: 'Food Photography.',
+    link: "the-beach-house"
   }
 ];
 
@@ -59,8 +67,10 @@ class Work extends Component {
         <div className="WorkComponents">
           {workIndex.map((el, i, arr) => (
             <div className="WorkContainers" key={i}>
-              <h2 className="WorkTitle">{el.title}</h2>
-              <p className="WorkDescription">{el.description}</p>
+              <div className="Content">
+                <h2 className="WorkTitle">{el.title}</h2>
+                <p className="WorkDescription">{el.description}</p>
+              </div>
             </div>
           ))}
         </div>
